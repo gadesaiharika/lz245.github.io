@@ -42,7 +42,7 @@ website:
       - text: "Home"
         href: index.qmd
       - text: "People"
-        href: team.qmd
+        href: people.qmd
       - text: "Research"
         href: research.qmd
       - text: "Publications"

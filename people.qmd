@@ -95,7 +95,13 @@ Research Associate
 
 Postdoctoral Research Associate
 
-*[Education and research interests to be added]*
+Ph.D. in Horticulture, Mississippi State University (2021)
+
+M.S. in Chemistry, Polytechnic Institute of New York University (2013)
+
+B.A. in Chemistry, Saint Mary's University of Minnesota (2011)
+
+Dr. Ye brings a unique interdisciplinary background combining chemistry and plant biology to the lab. Her research experience spans molecular biology techniques including cloning, qPCR, RNA-seq, proteomics, and protein expression/purification. She has expertise in bioinformatics tools (R, Python, SQL, Geneious) and has worked on projects involving gene expression analysis, systemic immunity, and stress responses. Her technical skills in Western blotting, ELISA, and cell culture complement the lab's research on host-pathogen interactions and molecular detection methods.
 
 **Email:** xy108 (at) msstate.edu
 :::
@@ -105,7 +111,7 @@ Postdoctoral Research Associate
 ::: {.person-entry}
 ::: {.columns}
 ::: {.column width="30%"}
-<!-- ![](assets/images/team/huanling-xing.jpg){fig-alt="Dr. Huanling Xing"} -->
+![](assets/images/team/huanling-xing.jpg){fig-alt="Dr. Huanling Xing"}
 :::
 
 ::: {.column width="70%"}
@@ -113,9 +119,15 @@ Postdoctoral Research Associate
 
 Postdoctoral Research Associate
 
-*[Education and research interests to be added]*
+Ph.D. in Preventive Veterinary Medicine, South China Agricultural University (2024)
 
-**Email:** *[To be added]*
+M.S. in Bioengineering, South China Agricultural University (2020)
+
+B.S. in Food Quality and Safety, Shanxi Agricultural University (2017)
+
+Dr. Xing brings seven years of research experience in natural antimicrobial compounds, with particular expertise in cinnamon essential oils and their pharmacological activities. Her doctoral research focused on the mechanism of cinnamon essential oil in inhibiting avian colibacillosis (E. coli infection in poultry) and its clinical applications. She has extensive technical skills in GC-MS, LC-MS, RT-qPCR, Western blotting, and electron microscopy (SEM/TEM). Her research interests include antibacterial mechanisms, natural product-based interventions for poultry pathogens, and food safety applications.
+
+**Email:** hx66 (at) msstate.edu
 :::
 :::
 :::
@@ -137,7 +149,7 @@ Candidate for Ph.D. in Poultry Science
 
 Sunita is working on pathogen genomics and vaccine development strategies for poultry pathogens. Her research focuses on identifying and characterizing vaccine candidates against avian pathogens using reverse vaccinology approaches.
 
-2025 Lallemand Animal Nutrition Scholarship Finalist
+**Award:** Best Oral Presentation Award (SCAD category) at IPSF 2026, 2025 Lallemand Animal Nutrition Scholarship Finalist
 
 **Email:** ss4440 (at) msstate.edu
 :::
@@ -157,7 +169,7 @@ Candidate for Ph.D. in Poultry Science
 
 Manhong is developing culturomics approaches to isolate and characterize beneficial bacteria from the poultry gut microbiome. His research aims to identify probiotics that can improve poultry health and reduce pathogen colonization.
 
-2024 International Paper Scholarship ($1,500), Mississippi Poultry Association
+**Award:** IPSF 2026 Certificate of Excellence at Pathology, IPSF 2026 Travel Award, 2024 International Paper Scholarship ($1,500), Mississippi Poultry Association
 
 **Email:** mw2224 (at) msstate.edu
 :::
@@ -251,7 +263,7 @@ Keaura joined the lab in 2025 supporting laboratory operations and research proj
 ::: {.person-entry}
 ::: {.columns}
 ::: {.column width="30%"}
-<!-- ![](assets/images/team/monzur-chowdhury.jpg){fig-alt="Dr. Monzur Chowdhury"} -->
+![](assets/images/team/monzur-chowdhury.jfif){fig-alt="Dr. Monzur Chowdhury"}
 :::
 
 ::: {.column width="70%"}
@@ -269,7 +281,7 @@ Research focus: Pathogens, host-pathogen interactions, molecular & cellular biol
 ::: {.person-entry}
 ::: {.columns}
 ::: {.column width="30%"}
-<!-- ![](assets/images/team/saman-fatemi.jpg){fig-alt="Dr. Saman Fatemi"} -->
+![](assets/images/team/saman-fatemi.jpg){fig-alt="Dr. Saman Fatemi"}
 :::
 
 ::: {.column width="70%"}
@@ -287,7 +299,7 @@ Research focus: Poultry nutrition, in ovo injection, immunology, and genetics
 ::: {.person-entry}
 ::: {.columns}
 ::: {.column width="30%"}
-<!-- ![](assets/images/team/reshma-ramachandran.jpg){fig-alt="Dr. Reshma Ramachandran"} -->
+![](assets/images/team/reshma-ramachandran.jpg){fig-alt="Dr. Reshma Ramachandran"}
 :::
 
 ::: {.column width="70%"}
@@ -302,30 +314,12 @@ Research focus: Poultry reproductive physiology, bacterial pathogen mitigation, 
 :::
 :::
 
-::: {.person-entry}
-::: {.columns}
-::: {.column width="30%"}
-<!-- ![](assets/images/team/nikhil-nuthalapati.jpg){fig-alt="Dr. Nikhil Nuthalapati"} -->
-:::
-
-::: {.column width="70%"}
-### Dr. Nikhil Nuthalapati
-
-Former Postdoctoral Research Associate
-
-Research focus: Light source effects on broiler growth and health, *Clostridium perfringens* prevalence
-
-**Now:** University of Alabama
-:::
-:::
-:::
-
 ### Ph.D. Alumni
 
 ::: {.person-entry}
 ::: {.columns}
 ::: {.column width="30%"}
-<!-- ![](assets/images/team/diksha-pokhrel.jpg){fig-alt="Dr. Diksha Pokhrel"} -->
+![](assets/images/team/diksha-pokhrel.jpg){fig-alt="Dr. Diksha Pokhrel"}
 :::
 
 ::: {.column width="70%"}
@@ -333,9 +327,9 @@ Research focus: Light source effects on broiler growth and health, *Clostridium 
 
 *Thesis: Campylobacter jejuni biofilm formation, aerotolerance, and genomic characterization*
 
-2023 IFT Mid-South Section Scholarship ($2,000), PSA Travel Award ($1,500)
+**Award:** 2023 IFT Mid-South Section Scholarship ($2,000), PSA Travel Award ($1,500)
 
-**Now:** Industry position
+**Now:** Lead Micribiologist at Ferrero
 :::
 :::
 :::
@@ -343,7 +337,7 @@ Research focus: Light source effects on broiler growth and health, *Clostridium 
 ::: {.person-entry}
 ::: {.columns}
 ::: {.column width="30%"}
-<!-- ![](assets/images/team/hudson-thames.jpg){fig-alt="Dr. Hudson T. Thames"} -->
+![](assets/images/team/hudson-thames.jpg){fig-alt="Dr. Hudson T. Thames"}
 :::
 
 ::: {.column width="70%"}
@@ -351,7 +345,7 @@ Research focus: Light source effects on broiler growth and health, *Clostridium 
 
 *Thesis: Salmonella biofilm formation and environmental stress responses*
 
-2023 PSA Travel Award ($1,500)
+**Award:** 2023 PSA Travel Award ($1,500)
 
 **Now:** Assistant Professor, Poultry Science, Mississippi State University
 :::
@@ -361,7 +355,7 @@ Research focus: Light source effects on broiler growth and health, *Clostridium 
 ::: {.person-entry}
 ::: {.columns}
 ::: {.column width="30%"}
-<!-- ![](assets/images/team/sabin-poudel.jpg){fig-alt="Dr. Sabin Poudel"} -->
+![](assets/images/team/sabin-poudel.jpg){fig-alt="Dr. Sabin Poudel"}
 :::
 
 ::: {.column width="70%"}
@@ -369,7 +363,7 @@ Research focus: Light source effects on broiler growth and health, *Clostridium 
 
 *Thesis: Campylobacter jejuni vaccine candidate identification and characterization*
 
-2022 PSA Student of The Year ($1,000), 2023 MAFES Excellent Research Award ($2,000), CALS Student Research Ambassador, International Paper Scholarship 1st place ($5,000)
+**Award:** 2022 PSA Student of The Year ($1,000), 2023 MAFES Excellent Research Award ($2,000), CALS Student Research Ambassador, International Paper Scholarship 1st place ($5,000)
 
 **Now:** Assistant Research Professor, Poultry Science, Auburn University
 :::
@@ -389,9 +383,9 @@ Research focus: Light source effects on broiler growth and health, *Clostridium 
 
 *Thesis: Vaccine candidate validation against avian pathogenic E. coli and Campylobacter jejuni colonization challenge models*
 
-2025 SCAD Travel Award ($250), IPPE Travel Award ($500)
+**Award:** 2025 SCAD Travel Award ($250), IPPE Travel Award ($500)
 
-**Now:** Industry position
+**Now:** Microbiologitst at Aviagen
 :::
 :::
 :::
@@ -399,7 +393,7 @@ Research focus: Light source effects on broiler growth and health, *Clostridium 
 ::: {.person-entry}
 ::: {.columns}
 ::: {.column width="30%"}
-<!-- ![](assets/images/team/abubakar-isah.jpg){fig-alt="Abubakar Shitu Isah"} -->
+![](assets/images/team/abubakar-isah.jpg){fig-alt="Abubakar Shitu Isah"}
 :::
 
 ::: {.column width="70%"}
@@ -415,7 +409,7 @@ Research focus: Light source effects on broiler growth and health, *Clostridium 
 ::: {.person-entry}
 ::: {.columns}
 ::: {.column width="30%"}
-<!-- ![](assets/images/team/priyanka-devkota.jpg){fig-alt="Priyanka Devkota"} -->
+![](assets/images/team/priyanka-devkota.jpg){fig-alt="Priyanka Devkota"}
 :::
 
 ::: {.column width="70%"}
@@ -423,7 +417,9 @@ Research focus: Light source effects on broiler growth and health, *Clostridium 
 
 *Thesis: APEC virulence characterization and antimicrobial resistance*
 
-PSA Certificate of Excellence, International Paper Scholarship 1st place ($2,000)
+**Award:** PSA Certificate of Excellence, International Paper Scholarship 1st place ($2,000)
+
+**Now:** Lab Research Analyst at Duke Human Vaccine Institute
 :::
 :::
 :::
@@ -439,9 +435,9 @@ PSA Certificate of Excellence, International Paper Scholarship 1st place ($2,000
 
 *Thesis: LAMP assay optimization for Clostridium perfringens detection*
 
-PSA Certificate of Excellence in Genetics and Molecular Biology
+**Award:** PSA Certificate of Excellence in Genetics and Molecular Biology
 
-**Now:** Postdoc
+**Now:** Postdoctoral Researcher, Department of Veterinary and Biomedical Sciences, Penn State University
 :::
 :::
 :::
@@ -457,9 +453,9 @@ PSA Certificate of Excellence in Genetics and Molecular Biology
 
 *Thesis: In ovo probiotic effects on APEC incidence in broilers*
 
-International Paper Scholarship 2nd place ($2,000)
+**Award:** International Paper Scholarship 2nd place ($2,000)
 
-**Now:** PhD
+**Now:** P/T Research Assistant, Department of Biomedical Sciences, City University of Hong Kong
 :::
 :::
 :::
@@ -512,7 +508,7 @@ Mackenzie conducts research in a poultry science laboratory. [Featured in MAFES 
 
 CALS/MAFES Undergraduate Research Scholars Program
 
-1st place ($250), MSU 2023 Spring Undergraduate Research Symposium (Biological Sciences)
+**Award** 1st place ($250), MSU 2023 Spring Undergraduate Research Symposium (Biological Sciences)
 :::
 :::
 :::
@@ -554,6 +550,8 @@ William M. White Special Project Award recipient
 ### Sadie White (2019)
 
 CALS/MAFES Undergraduate Research Scholars Program
+
+**Now:** Research Associate II, James E. Garrison Sensory Physiology Lab; Ph.D. Student, Mississippi State University
 :::
 :::
 :::
