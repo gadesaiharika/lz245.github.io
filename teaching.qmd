@@ -138,16 +138,16 @@ I currently serve or have served on **35+ graduate committees** across multiple 
 **Ph.D. Graduates (Major Advisor)**
 
 - Dr. Diksha Pokhrel (2024) → Industry position
-- Dr. Hudson T. Thames (2024) → Industry position
-- Dr. Sabin Poudel (2023) → Postdoctoral position; *2022 PSA Student of the Year*, *MAFES Excellent Research Award*
-- Dr. Linan Jia (2021) → Research position
+- Dr. Hudson T. Thames (2024) → Faculty position
+- Dr. Sabin Poudel (2023) → Faculty position
+- Dr. Linan Jia (2021) → Faculty position
 
 **M.S. Graduates (Major Advisor)**
 
 - Abubakar Isah (2024) → Ph.D. program
-- Priyanka Devkota (2022) → *PSA Certificate of Excellence*, *International Paper Scholarship 1st place*
-- Deepa Chaudhary (2022) → *PSA Certificate of Excellence*
-- Tianmin Li (2020) → *International Paper Scholarship 2nd place*
+- Priyanka Devkota (2022) → Research position
+- Deepa Chaudhary (2022) → Postdoc position
+- Tianmin Li (2020) → Ph.D. program
 
 **Undergraduate Researchers**
 
@@ -166,6 +166,8 @@ My students have received numerous awards and scholarships:
 
 | Year | Student | Award |
 |------|---------|-------|
+| 2026 | Sunita Shrestha | Best Oral Presentation Award (SCAD), IPSF |
+| 2026 | Manhong Wang | Certificate of Excellence in Pathology, IPSF; IPSF Travel Award  |
 | 2025 | Sunita Shrestha | Lallemand Animal Nutrition Scholarship Finalist |
 | 2025 | Manhong Wang | International Paper Scholarship, Mississippi Poultry Association |
 | 2025 | Hailey Fugate | SCAD Travel Award for IPSF; IPPE Travel Award, Southern Ag Credit |
