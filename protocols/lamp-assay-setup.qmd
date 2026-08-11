@@ -1,0 +1,16 @@
+---
+title: "LAMP Assay Setup for Rapid Pathogen Detection"
+description: "Placeholder — content to be provided by the lab."
+date: 2026-01-01
+categories: [Molecular, Detection]
+---
+
+::: {.callout-note}
+## Placeholder — content coming soon
+This page reserves a spot in the Protocols section. The full procedure will be added by
+the lab. To fill it in, edit this file using [`_template.qmd`](_template.qmd) as a guide
+for the standard sections (Materials, Equipment, Safety, Procedure, Troubleshooting).
+:::
+
+**Intended scope:** Setup and run conditions for loop-mediated isothermal amplification
+(LAMP) assays used for rapid detection of foodborne pathogens.

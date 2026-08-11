@@ -1,0 +1,16 @@
+---
+title: "Genomic DNA Extraction from Bacterial Isolates"
+description: "Placeholder — content to be provided by the lab."
+date: 2026-01-01
+categories: [Molecular, Sequencing]
+---
+
+::: {.callout-note}
+## Placeholder — content coming soon
+This page reserves a spot in the Protocols section. The full procedure will be added by
+the lab. To fill it in, edit this file using [`_template.qmd`](_template.qmd) as a guide
+for the standard sections (Materials, Equipment, Safety, Procedure, Troubleshooting).
+:::
+
+**Intended scope:** Extraction of high-molecular-weight genomic DNA from pure bacterial
+cultures for whole-genome sequencing.
