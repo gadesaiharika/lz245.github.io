@@ -1,0 +1,23 @@
+---
+title: "Lab Protocols"
+subtitle: "Standard operating procedures used in the Zhang Lab"
+toc: false
+listing:
+  contents: "*.qmd"
+  sort: "title asc"
+  type: table
+  categories: true
+  sort-ui: [title, date]
+  filter-ui: true
+  fields: [title, description, categories, date]
+  date-format: "MMM YYYY"
+  field-display-names:
+    date: "Updated"
+    description: "Summary"
+---
+
+Protocols below are shared for transparency and for training lab members. They are
+provided as-is for reference; validate any procedure against your own institutional
+biosafety and standard operating requirements before use.
+
+Questions about a protocol? [Contact us](mailto:l.zhang@msstate.edu).

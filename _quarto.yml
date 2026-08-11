@@ -47,6 +47,10 @@ website:
         href: research.qmd
       - text: "Publications"
         href: publications.qmd
+      - text: "Lab Protocols"
+        href: protocols/index.qmd
+      - text: "News"
+        href: news/index.qmd
       - text: "Teaching"
         href: teaching.qmd
       - text: "Join Us"

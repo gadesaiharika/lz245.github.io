@@ -1,0 +1,13 @@
+[
+  {
+    "listing": "/news/index.html",
+    "items": []
+  },
+  {
+    "listing": "/protocols/index.html",
+    "items": [
+      "/protocols/genomic-dna-extraction.html",
+      "/protocols/lamp-assay-setup.html"
+    ]
+  }
+]
