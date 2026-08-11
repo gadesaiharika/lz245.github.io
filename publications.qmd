@@ -6,32 +6,58 @@ toc-depth: 2
 ---
 
 ::: {.pub-stats}
-**67+** Total Publications | [Google Scholar](https://scholar.google.com/citations?user=XXXXXXXX) | [ORCID: 0000-0002-3933-5794](https://orcid.org/0000-0002-3933-5794)
+**67+** Total Publications | [Google Scholar](https://scholar.google.com/citations?user=PpnVGN4AAAAJ&hl=en) | [ORCID: 0000-0002-3933-5794](https://orcid.org/0000-0002-3933-5794)
 :::
 
 *Publications with **Zhang, L.** as corresponding author are marked with asterisk*
 
 ---
 
+## 2026
+
+1. **Zhang, L.**, Ishii, S., Rothrock Jr., M.J., Oladeinde, A., & Li, X. (2026). Genomic insights into the evolution and adaptation of *Listeria monocytogenes* in poultry production systems. *Food Research International*, 232, 118941. [DOI](https://doi.org/10.1016/j.foodres.2026.118941)
+
+2. Jia, L., Fugate, H., Ye, X., Arick II, M.A., Hsu, C.Y., Evans, J.D., Robinson, K., Adhikari, P., & **Zhang, L.\*** (2026). Genetic knockout of *pagP* in avian pathogenic *Escherichia coli* using CRISPR-Cas9/λ-Red system and growth characterization. *Journal of Applied Poultry Research*, 35(2), 100679. [DOI](https://doi.org/10.1016/j.japr.2026.100679)
+
+3. Wang, M., Ye, X., Hsu, C.Y., Fugate, H., Zhang, X., Adhikari, P.A., Fan, P., Elliott, K., Macklin, K., & **Zhang, L.\*** (2026). Application of culturomics to explore the cultivable microbiota and enable targeted bacterial isolation from the ceca of broiler chickens. *Poultry Science*, 105(4), 106527. [DOI](https://doi.org/10.1016/j.psj.2026.106527)
+
+4. Thames, H.T., Pokhrel, D., Sukumaran, A.T., Dinh, T.T.T.N., Schilling, M.W., White, S., Ramachandran, R., Macklin, K., & **Zhang, L.\*** (2026). Environmental stress modulates expression of biofilm-related genes in *Salmonella*. *Journal of Applied Microbiology*, 137(2), lxag018. [DOI](https://doi.org/10.1093/jambio/lxag018)
+
+5. Ye, X., Fugate, H., Beck, C.N., **Zhang, L.**, & Jia, L. (2026). Research note: Temporal and tissue-specific immune responses to *Campylobacter jejuni* colonization in broiler chickens. *Poultry Science*, 105(4), 106561. [DOI](https://doi.org/10.1016/j.psj.2026.106561)
+
+6. Ye, X., Hsu, C.Y., Jia, L., Magee, C., Leigh, S., Evans, J., **Zhang, L.**, & Robinson, K. (2026). Development and validation of a multiplex TaqMan real-time quantitative polymerase chain reaction assay for selected pro-inflammatory immune-response gene expression in chickens. *Poultry Science*, 105(10), 107237. [DOI](https://doi.org/10.1016/j.psj.2026.107237)
+
+7. Magee, E., **Zhang, L.**, Shen, C., & Boltz, T. (2026). Analyzing *Salmonella*, *Campylobacter*, and generic *Escherichia coli* in feed ingredients and poultry feed samples obtained from commercial and integrated feed mills. *Poultry Science*, 105(10), 107370. [DOI](https://doi.org/10.1016/j.psj.2026.107370)
+
+8. Muñoz, L.R., Escobar, C., **Zhang, L.**, Jia, L., Bailey, M., Bourassa, D., Rochell, S., Chaves-Cordoba, B., Tashiguano, V., Quino, M., Adhikari, Y., Orellana, L., & Macklin, K.S. (2026). Effects of intermittent and continuous organic acids in water on antimicrobial activity, intestinal morphology, gut microbiota, and growth performance of *Campylobacter jejuni* challenged or unchallenged broilers. *European Poultry Science*, 90(1-2), 100022. [DOI](https://doi.org/10.1016/j.eups.2026.100022)
+
+9. Lyte, J.M., Seyoum, M.M., Ayala, D., ..., **Zhang, L.**, ..., & Proszkowiec-Weglarz, M. (2026). Best practices framework for using 16S rRNA gene sequencing in poultry microbiota research. *Poultry Science*, 105(9), 107275. [DOI](https://doi.org/10.1016/j.psj.2026.107275)
+
+---
+
 ## 2025
 
-1. **Zhang, L.**, Ishii, S., Rothrock Jr., M.J., Oladeinde, A., & Li, X. (2025). Genomic insights into the evolution and adaptation of *Listeria monocytogenes* in poultry production systems. *Food Research International*. (Submitted)
+1. Jia, L., Ye, X., Arick, M.A., Hsu, C.Y., Evans, J.D., Robinson, K., Adhikari, P., & **Zhang, L.\*** (2025). Reverse vaccinology and host-pathogen analysis reveal pagP as a potential universal vaccine candidate against avian pathogenic *Escherichia coli* in poultry. *Journal of Applied Microbiology*, 136(10), lxaf253. [DOI](https://doi.org/10.1093/jambio/lxaf253)
 
-2. Jia, L., Ye, X., Arick, M.A., Hsu, C.Y., Evans, J.D., Robinson, K., Adhikari, P., & **Zhang, L.\*** (2025). Reverse vaccinology and host-pathogen analysis reveal pagP as a potential universal vaccine candidate against avian pathogenic *Escherichia coli* in poultry. *Journal of Applied Microbiology*, 136(10), lxaf253. [DOI](https://doi.org/10.1093/jambio/lxaf253)
+2. Jia, L., Hsu, C.Y., Zhang, X., Schilling, M.W., Wamsley, K., Adhikari, P., & **Zhang, L.\*** (2025). Differential expression of genes in fatty acid metabolism and inflammation pathways in Pectoralis major of broilers with woody breast myopathy. *Avian Diseases*, 69(3), 265-274. [DOI](https://doi.org/10.1637/aviandiseases-D-25-00021)
 
-3. Thames, H.T., Pokhrel, D., Sukumaran, A.T., Dinh, T.T.T.N., Schilling, M.W., White, S., Ramachandran, R., Macklin, K.S., & **Zhang, L.\*** (2025). Environmental Stress Modulates Expression of Biofilm-Related Genes in *Salmonella*. *Journal of Applied Microbiology*. (Accepted)
+3. Chaudhary, D., Poudel, S., Jia, L., Sukumaran, A.T., Zhang, X., Cheng, W.H., Kiess, A.S., Macklin, K.S., Hsu, C.Y., & **Zhang, L.\*** (2025). Evaluation of different DNA extraction methods for the detection of *Clostridium perfringens* by loop-mediated isothermal amplification (LAMP) assay. *Journal of Applied Poultry Research*, 34(4), 100600. [DOI](https://doi.org/10.1016/j.japr.2025.100600)
 
-4. Jia, L., Hsu, C.Y., Zhang, X., Schilling, M.W., Wamsley, K., Adhikari, P., & **Zhang, L.\*** (2025). Differential expression of genes in fatty acid metabolism and inflammation pathways in Pectoralis major of broilers with woody breast myopathy. *Avian Diseases*, 69(3), 265-274. [DOI](https://doi.org/10.1637/aviandiseases-D-25-00021)
+4. Ye, X., Hsu, C.Y., Jia, L., Zhang, X., Magee, C., Whitham, S., Leigh, S., Evans, J., **Zhang, L.**, & Robinson, K. (2025). Dynamic immune response to Avian Pathogenic *Escherichia coli* infection in broiler chickens: Insights into pro-inflammatory and anti-inflammatory cytokine regulation. *Poultry Science*, 104(6), 105029. [DOI](https://doi.org/10.1016/j.psj.2025.105029)
 
-5. Chaudhary, D., Poudel, S., Jia, L., Sukumaran, A.T., Zhang, X., Cheng, W.H., Kiess, A.S., Macklin, K.S., Hsu, C.Y., & **Zhang, L.\*** (2025). Evaluation of different DNA extraction methods for the detection of *Clostridium perfringens* by loop-mediated isothermal amplification (LAMP) assay. *Journal of Applied Poultry Research*, 34(4), 100600. [DOI](https://doi.org/10.1016/j.japr.2025.100600)
+5. Adhikari, Y., Bourassa, D.V., Poudel, S., Bailey, M.A., **Zhang, L.**, Buhr, R.J., & Macklin, K.S. (2025). Antimicrobial resistance pattern in *Campylobacter* strains isolated from both no-antibiotics-ever (NAE) and conventional broiler complexes: Genotypic and phenotypic characterization. *Poultry Science*, 104(10), 105516. [DOI](https://doi.org/10.1016/j.psj.2025.105516)
 
-6. Ye, X., Hsu, C.Y., Jia, L., Zhang, X., Magee, C., Whitham, S., Leigh, S., Evans, J., **Zhang, L.**, & Robinson, K. (2025). Dynamic immune response to Avian Pathogenic *Escherichia coli* infection in broiler chickens: Insights into pro-inflammatory and anti-inflammatory cytokine regulation. *Poultry Science*, 104(6), 105029. [DOI](https://doi.org/10.1016/j.psj.2025.105029)
+6. Ogundipe, T.T., Beitia, S., **Zhang, L.**, Zhang, X., & Obe, T. (2025). Differences in microbial composition of litter and water line biofilm of broiler farms as influenced by water quality history. *Poultry Science*, 104(11), 105832. [DOI](https://doi.org/10.1016/j.psj.2025.105832)
 
-7. Wang, M., Ye, X., Hsu, C.Y., Fugate, H., Zhang, X., Adhikari, P.A., Fan, P., Elliott, K., Macklin, K., & **Zhang, L.\*** (2025). Targeted cultivation and isolation of probiotic candidate taxa from the cecal microbiota of broiler chickens using culturomics. *Poultry Science*. (Minor revision)
+7. Poudel, I., Calvert, A., Kiess, A.S., **Zhang, L.**, & Adhikari, P.A. (2025). Effect of a *Bacillus*-based probiotic on fecal shedding and cecal colonization of *Salmonella* Enteritidis in laying hens. *Journal of Applied Poultry Research*, 34(2), 100532. [DOI](https://doi.org/10.1016/j.japr.2025.100532)
 
-8. Lyte, J.M., Seyoum, M.M., Ayala, D., ..., **Zhang, L.**, ..., & Proszkowiec-Weglarz, M. (2025). Do we need a standardized 16S rRNA gene amplicon sequencing analysis protocol for poultry microbiota research? *Poultry Science*, 104(6), 105242. [DOI](https://doi.org/10.1016/j.psj.2025.105242)
+8. Rodewald, E.A., Jasek, B., **Zhang, L.**, Roberts, S., Bortoluzzi, C., & Adhikari, P. (2025). Role of a Precision Biotic Fed to Dekalb White Laying Hens at Peak Production. *Animals*, 15(14), 2095. [DOI](https://doi.org/10.3390/ani15142095)
 
-9. Huang, Y.C., Lu, H.Y., **Zhang, L.**, ..., & Cheng, W.H. (2025). Dietary selenium deficiency accelerates the onset of aging-related gut microbial changes in aged telomere-humanized mice. *Aging Cell*, 0, e70130. [DOI](https://doi.org/10.1111/acel.70130)
+9. Lyte, J.M., Seyoum, M.M., Ayala, D., ..., **Zhang, L.**, ..., & Proszkowiec-Weglarz, M. (2025). Do we need a standardized 16S rRNA gene amplicon sequencing analysis protocol for poultry microbiota research? *Poultry Science*, 104(7), 105242. [DOI](https://doi.org/10.1016/j.psj.2025.105242)
+
+10. Huang, Y.C., Lu, H.Y., **Zhang, L.**, ..., & Cheng, W.H. (2025). Dietary selenium deficiency accelerates the onset of aging-related gut microbial changes in aged telomere-humanized mice. *Aging Cell*, 24(8), e70130. [DOI](https://doi.org/10.1111/acel.70130)
+
+11. Choi, J.W., Baek, S., **Zhang, L.**, Bae, J.E., & Lee, S.G. (2025). Hot-Water Infusion as an Efficient and Sustainable Extraction Approach for Edible Flower Teas. *Applied Sciences*, 15(23), 12730. [DOI](https://doi.org/10.3390/app152312730)
 
 ---
 

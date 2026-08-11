@@ -258,7 +258,7 @@ PATCH: Bug fixes, typos, small updates
 
 ### Current Version
 
-**v1.0.0** (January 2025) - Initial release with complete lab information
+**v1.2.0** (August 2026) - Added 2026 publications; fixed repeat-render failure
 
 ### Creating a Release
 
@@ -288,8 +288,19 @@ git push origin main --tags
 
 ### Changelog
 
+Newest first.
+
 | Version | Date | Changes |
 |---------|------|---------|
+| v1.2.0 | Aug 2026 | Added a 2026 publications section with 9 papers (6 new; 3 promoted from in-press) |
+| | | Updated 3 entries that were listed as Submitted / Accepted / Minor revision to their published citations |
+| | | Backfilled 5 missing 2025 publications; the 2025 list now matches Google Scholar |
+| | | Corrected volume/issue on 2 existing 2025 entries (Lyte 104(7), Huang 24(8)) |
+| | | Replaced the placeholder Google Scholar profile link |
+| | | Fixed `_quarto.yml` so repeat `quarto render` runs no longer fail on `.qmd` files copied into `docs/` |
+| v1.1.0 | Aug 2026 | Added Lab Protocols section with a reusable template and two protocol pages |
+| | | Added News section with a date-ordered listing |
+| | | Tagged retroactively — released via PR #1 before tagging was in use |
 | v1.0.0 | Jan 2025 | Initial release: Complete site with team, publications, research, teaching |
 | | | Added all current graduate students and alumni |
 | | | 67+ publications |
