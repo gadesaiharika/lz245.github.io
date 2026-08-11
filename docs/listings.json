@@ -1,7 +1,9 @@
 [
   {
     "listing": "/news/index.html",
-    "items": []
+    "items": [
+      "/news/2026-01-01-sample-news-post.html"
+    ]
   },
   {
     "listing": "/protocols/index.html",

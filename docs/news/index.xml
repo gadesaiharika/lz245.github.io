@@ -10,6 +10,37 @@
 <atom:link href="https://lz245.github.io/news/index.xml" rel="self" type="application/rss+xml"/>
 <description>Agricultural Microbiomes, Microbial Genomics, and Food Safety Research</description>
 <generator>quarto-1.10.18</generator>
-<lastBuildDate>Tue, 11 Aug 2026 16:02:42 GMT</lastBuildDate>
+<lastBuildDate>Thu, 01 Jan 2026 06:00:00 GMT</lastBuildDate>
+<item>
+  <title>Sample news post — replace with your first update</title>
+  <link>https://lz245.github.io/news/2026-01-01-sample-news-post.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Placeholder — content to be provided
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This is a sample post added when the News section was set up. Replace it (or delete it) once real lab news is ready. To add a news item, copy this file, rename it with the date, and edit the front matter (<code>title</code>, <code>description</code>, <code>date</code>, <code>categories</code>) and the text below.</p>
+</div>
+</div>
+<p>Write the news update here. A short paragraph or two works well — an award, a new publication, a lab member joining, a conference talk, or a grant announcement.</p>
+<p>The date at the top controls the ordering; the newest post appears first automatically.</p>
+
+
+
+<a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
+  <category>Announcements</category>
+  <guid>https://lz245.github.io/news/2026-01-01-sample-news-post.html</guid>
+  <pubDate>Thu, 01 Jan 2026 06:00:00 GMT</pubDate>
+</item>
 </channel>
 </rss>

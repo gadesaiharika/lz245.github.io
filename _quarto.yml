@@ -1,6 +1,13 @@
 project:
   type: website
   output-dir: docs
+  # Render every .qmd EXCEPT anything inside the output dir. Quarto copies
+  # unrendered sources (e.g. protocols/_template.qmd) into docs/ as resources;
+  # without this exclusion the next render picks those copies up as project
+  # inputs and fails with "NotFound ... readfile docs/news/*.qmd".
+  render:
+    - "**/*.qmd"
+    - "!docs/**"
   resources:
     - "assets/**"
     - "CNAME"
