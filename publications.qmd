@@ -45,9 +45,19 @@ toc-depth: 2
 
 4. Ye, X., Hsu, C.Y., Jia, L., Zhang, X., Magee, C., Whitham, S., Leigh, S., Evans, J., **Zhang, L.**, & Robinson, K. (2025). Dynamic immune response to Avian Pathogenic *Escherichia coli* infection in broiler chickens: Insights into pro-inflammatory and anti-inflammatory cytokine regulation. *Poultry Science*, 104(6), 105029. [DOI](https://doi.org/10.1016/j.psj.2025.105029)
 
-5. Lyte, J.M., Seyoum, M.M., Ayala, D., ..., **Zhang, L.**, ..., & Proszkowiec-Weglarz, M. (2025). Do we need a standardized 16S rRNA gene amplicon sequencing analysis protocol for poultry microbiota research? *Poultry Science*, 104(6), 105242. [DOI](https://doi.org/10.1016/j.psj.2025.105242)
+5. Adhikari, Y., Bourassa, D.V., Poudel, S., Bailey, M.A., **Zhang, L.**, Buhr, R.J., & Macklin, K.S. (2025). Antimicrobial resistance pattern in *Campylobacter* strains isolated from both no-antibiotics-ever (NAE) and conventional broiler complexes: Genotypic and phenotypic characterization. *Poultry Science*, 104(10), 105516. [DOI](https://doi.org/10.1016/j.psj.2025.105516)
 
-6. Huang, Y.C., Lu, H.Y., **Zhang, L.**, ..., & Cheng, W.H. (2025). Dietary selenium deficiency accelerates the onset of aging-related gut microbial changes in aged telomere-humanized mice. *Aging Cell*, 0, e70130. [DOI](https://doi.org/10.1111/acel.70130)
+6. Ogundipe, T.T., Beitia, S., **Zhang, L.**, Zhang, X., & Obe, T. (2025). Differences in microbial composition of litter and water line biofilm of broiler farms as influenced by water quality history. *Poultry Science*, 104(11), 105832. [DOI](https://doi.org/10.1016/j.psj.2025.105832)
+
+7. Poudel, I., Calvert, A., Kiess, A.S., **Zhang, L.**, & Adhikari, P.A. (2025). Effect of a *Bacillus*-based probiotic on fecal shedding and cecal colonization of *Salmonella* Enteritidis in laying hens. *Journal of Applied Poultry Research*, 34(2), 100532. [DOI](https://doi.org/10.1016/j.japr.2025.100532)
+
+8. Rodewald, E.A., Jasek, B., **Zhang, L.**, Roberts, S., Bortoluzzi, C., & Adhikari, P. (2025). Role of a Precision Biotic Fed to Dekalb White Laying Hens at Peak Production. *Animals*, 15(14), 2095. [DOI](https://doi.org/10.3390/ani15142095)
+
+9. Lyte, J.M., Seyoum, M.M., Ayala, D., ..., **Zhang, L.**, ..., & Proszkowiec-Weglarz, M. (2025). Do we need a standardized 16S rRNA gene amplicon sequencing analysis protocol for poultry microbiota research? *Poultry Science*, 104(7), 105242. [DOI](https://doi.org/10.1016/j.psj.2025.105242)
+
+10. Huang, Y.C., Lu, H.Y., **Zhang, L.**, ..., & Cheng, W.H. (2025). Dietary selenium deficiency accelerates the onset of aging-related gut microbial changes in aged telomere-humanized mice. *Aging Cell*, 24(8), e70130. [DOI](https://doi.org/10.1111/acel.70130)
+
+11. Choi, J.W., Baek, S., **Zhang, L.**, Bae, J.E., & Lee, S.G. (2025). Hot-Water Infusion as an Efficient and Sustainable Extraction Approach for Edible Flower Teas. *Applied Sciences*, 15(23), 12730. [DOI](https://doi.org/10.3390/app152312730)
 
 ---
 
