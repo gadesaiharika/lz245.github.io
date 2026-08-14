@@ -1,0 +1,15 @@
+# Production profile (default). Indexable + Google Analytics.
+format:
+  html:
+    include-in-header:
+      - text: |
+          <meta name="robots" content="index, follow">
+          <meta name="keywords" content="agricultural microbiomes, food safety, microbial genomics, bioinformatics, whole-genome sequencing, WGS, biofilms, foodborne pathogens, Salmonella, Campylobacter, E. coli, nanopore sequencing, LAMP assay, molecular detection">
+          <!-- Google tag (gtag.js) -->
+          <script async src="https://www.googletagmanager.com/gtag/js?id=G-3B7N686V5Q"></script>
+          <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-3B7N686V5Q');
+          </script>

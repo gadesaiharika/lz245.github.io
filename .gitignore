@@ -14,3 +14,5 @@ Thumbs.db
 # R project leftovers (R is not used by this site)
 .Rproj.user/
 *.Rproj
+
+**/*.quarto_ipynb
