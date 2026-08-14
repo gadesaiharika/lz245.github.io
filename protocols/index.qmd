@@ -1,4 +1,5 @@
 ---
+search: false
 title: "Lab Protocols"
 subtitle: "Standard operating procedures used in the Zhang Lab"
 toc: false

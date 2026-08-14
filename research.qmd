@@ -40,7 +40,7 @@ The microbiome plays critical roles in food safety, pathogen colonization resist
 
 ### Key Publications
 
-- Wang et al. (2025) *Poultry Science* — Culturomics for probiotic candidate isolation (Minor revision)
+- Wang et al. (2026) *Poultry Science* — Application of culturomics to explore the cultivable microbiota of broiler ceca. [DOI](https://doi.org/10.1016/j.psj.2026.106527)
 - Zhang et al. (2021) *Poultry Science* — Cecal microbiota contribute to woody breast myopathy. [DOI](https://doi.org/10.1016/j.psj.2021.101124)
 - Jia et al. (2022) *Poultry Science* — Woody breast myopathy-associated gut microbiome. [DOI](https://doi.org/10.1016/j.psj.2022.101960)
 
@@ -264,7 +264,7 @@ Biofilm formation by foodborne pathogens poses significant challenges for food s
 ### Key Publications
 
 - Pokhrel et al. (2024) *Poultry Science* — Temperature effects on *C. jejuni* biofilm formation. [DOI](https://doi.org/10.1016/j.psj.2024.103753)
-- Thames et al. (2025) *J. Applied Microbiology* — Environmental stress modulates biofilm gene expression (Accepted)
+- Thames et al. (2026) *J. Applied Microbiology* — Environmental stress modulates expression of biofilm-related genes in *Salmonella*. [DOI](https://doi.org/10.1093/jambio/lxag018)
 
 
 :::

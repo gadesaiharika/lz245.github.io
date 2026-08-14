@@ -1,0 +1,17 @@
+- name: Dr. Xin Ye
+  role: Postdoctoral Research Associate
+  photo: assets/images/team/xin-ye.jpg
+  blurb: >
+    Interdisciplinary chemist and molecular biologist — cloning, qPCR, RNA-seq,
+    proteomics, and bioinformatics for host-pathogen interaction and molecular
+    detection research.
+  email: xy108@msstate.edu
+
+- name: Dr. Huanling Xing
+  role: Postdoctoral Research Associate
+  photo: assets/images/team/huanling-xing.jpg
+  blurb: >
+    Natural antimicrobial compounds — mechanisms of cinnamon essential oil
+    against avian colibacillosis, with expertise in GC-MS, LC-MS, RT-qPCR,
+    and electron microscopy.
+  email: hx66@msstate.edu

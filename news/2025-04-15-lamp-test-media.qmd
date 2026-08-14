@@ -1,0 +1,24 @@
+---
+title: "Our rapid C. perfringens test makes headlines"
+date: 2025-04-15
+description: >
+  The lab's LAMP-based rapid detection assay for Clostridium perfringens —
+  a pathogen that costs the global poultry industry billions — was featured
+  by MAFES Discovers and The Microbiologist.
+categories: [Media]
+---
+
+*Clostridium perfringens* causes necrotic enteritis, a disease estimated to
+cost the global poultry industry billions of dollars every year. Our lab
+developed a **loop-mediated isothermal amplification (LAMP) assay** that
+detects the pathogen rapidly and is practical outside a central laboratory.
+
+The work drew media attention this spring:
+
+- [**Billion-Dollar Bacteria Breakthrough**](https://www.mafes.msstate.edu/discovers/article.php?id=350) — *MAFES Discovers*
+- [**AMI Members Develop Rapid Test for Bacterium That Costs Poultry Industry Billions Globally**](https://www.the-microbiologist.com/news/ami-members-develop-rapid-test-for-bacterium-that-costs-poultry-industry-billions-globally/5598.article) — *The Microbiologist*
+
+The underlying research on assay optimization and DNA extraction methods is
+published in the *Journal of Applied Poultry Research*
+([2024](https://doi.org/10.1016/j.japr.2024.100513),
+[2025](https://doi.org/10.1016/j.japr.2025.100600)).

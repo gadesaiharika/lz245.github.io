@@ -1,4 +1,5 @@
 ---
+search: false
 title: "Genomic DNA Extraction from Bacterial Isolates"
 description: "Placeholder — content to be provided by the lab."
 date: 2026-01-01

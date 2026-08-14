@@ -1,0 +1,22 @@
+```{=html}
+<div class="people-grid">
+<% for (const p of items) { %>
+  <div class="person-card">
+    <% if (p.photo) { %>
+    <img class="person-photo" src="<%- p.photo %>" alt="<%= p.name %>">
+    <% } else { %>
+    <div class="person-photo-placeholder" aria-hidden="true"><%= p.name.split(' ').map(function (w) { return w[0]; }).join('').slice(0, 2) %></div>
+    <% } %>
+    <h3><%= p.name %></h3>
+    <p class="person-role"><%= p.role %></p>
+    <% if (p.blurb) { %><p class="person-blurb"><%= p.blurb %></p><% } %>
+    <% if (p.award) { %><p class="person-award"><i class="bi bi-award" aria-hidden="true"></i><%= p.award %></p><% } %>
+    <p class="person-links">
+      <% if (p.email) { %><a href="mailto:<%- p.email %>" aria-label="Email <%= p.name %>"><i class="bi bi-envelope" aria-hidden="true"></i></a><% } %>
+      <% if (p.scholar) { %><a href="<%- p.scholar %>" aria-label="Google Scholar profile of <%= p.name %>"><i class="bi bi-mortarboard" aria-hidden="true"></i></a><% } %>
+      <% if (p.profile) { %><a href="<%- p.profile %>" aria-label="University profile of <%= p.name %>"><i class="bi bi-bank" aria-hidden="true"></i></a><% } %>
+    </p>
+  </div>
+<% } %>
+</div>
+```

@@ -1,0 +1,12 @@
+# Research faculty. To add a person, copy a block and edit the fields.
+# photo is optional — without it the card shows the person's initials.
+- name: Dr. Linan Jia
+  role: Assistant Research Professor
+  photo: assets/images/team/linan-jia.jpg
+  blurb: >
+    Poultry health and disease prevention — molecular mechanisms of poultry
+    pathogens and meat quality, combining biotechnology and computational
+    approaches.
+  email: lj912@msstate.edu
+  scholar: https://scholar.google.com/citations?user=KkyDvl8AAAAJ&hl=en
+  profile: https://www.poultry.msstate.edu/people/lj912

@@ -5,11 +5,17 @@ toc: true
 toc-depth: 2
 ---
 
+::: {.pubs-page}
+
 ::: {.pub-stats}
-**67+** Total Publications | [Google Scholar](https://scholar.google.com/citations?user=PpnVGN4AAAAJ&hl=en) | [ORCID: 0000-0002-3933-5794](https://orcid.org/0000-0002-3933-5794)
+<span class="pub-count">67+</span>
+<span class="pub-count-label">Peer-reviewed<br>publications</span>
+<span style="flex:1"></span>
+[Google Scholar](https://scholar.google.com/citations?user=PpnVGN4AAAAJ&hl=en)
+[ORCID 0000-0002-3933-5794](https://orcid.org/0000-0002-3933-5794)
 :::
 
-*Publications with **Zhang, L.** as corresponding author are marked with asterisk*
+*Publications with **Zhang, L.** as corresponding author are marked with an asterisk.*
 
 ---
 
@@ -185,3 +191,5 @@ We are committed to open science. Genome sequences are deposited in NCBI:
 ---
 
 *For reprints or collaboration inquiries, [contact us](mailto:l.zhang@msstate.edu).*
+
+:::

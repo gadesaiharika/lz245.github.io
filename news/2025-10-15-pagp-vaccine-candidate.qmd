@@ -1,0 +1,27 @@
+---
+title: "Reverse vaccinology points to pagP as a universal APEC vaccine candidate"
+date: 2025-10-15
+description: >
+  Published in the Journal of Applied Microbiology, our reverse vaccinology
+  and host-pathogen analysis identifies pagP as a potential universal vaccine
+  candidate against avian pathogenic E. coli — work also featured in
+  MAFES Discovers.
+categories: [Publications, Media]
+---
+
+Avian pathogenic *E. coli* (APEC) is one of the costliest bacterial diseases
+in poultry production. In work published in the *Journal of Applied
+Microbiology*, our team used **reverse vaccinology** — pangenome analysis and
+in-silico antigen prediction — to identify ***pagP*** as a potential universal
+vaccine candidate:
+
+> Jia, L., Ye, X., Arick, M.A., Hsu, C.Y., Evans, J.D., Robinson, K.,
+> Adhikari, P., & Zhang, L. (2025). Reverse vaccinology and host-pathogen
+> analysis reveal pagP as a potential universal vaccine candidate against
+> avian pathogenic *Escherichia coli* in poultry. *Journal of Applied
+> Microbiology*, 136(10), lxaf253.
+> [DOI](https://doi.org/10.1093/jambio/lxaf253)
+
+The vaccine-development program behind this work was featured by *MAFES
+Discovers* in ["Fowl Play: MSU Scientists Develop Chicken Vaccine to Combat
+Bacteria"](https://www.mafes.msstate.edu/discovers/article.php?id=321).
