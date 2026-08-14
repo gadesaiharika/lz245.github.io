@@ -21,7 +21,7 @@ Ph.D. in Agriculture Biological Environmental & Energy Engineering, Jilin Univer
 
 Dr. Zhang's research focuses on agricultural microbiomes, microbial genomics, vaccine development, and food safety. His lab develops advanced molecular diagnostic tools (LAMP, qPCR) and applies whole-genome sequencing and bioinformatics to address critical challenges in poultry health and food safety.
 
-[Google Scholar](https://scholar.google.com/citations?user=YOURPROFILE) | [GitHub](https://github.com/lz245) | [MSU Profile](https://www.poultry.msstate.edu/people/lz245)
+[GitHub](https://github.com/lz245) | [MSU Profile](https://www.poultry.msstate.edu/people/lz245)
 
 **Email:** l.zhang (at) msstate.edu
 :::
@@ -72,8 +72,6 @@ Dr. Jia specializes in poultry health and disease prevention, with a focus on un
 ### Elianna Walters
 
 Research Associate
-
-*[Education and research interests to be added]*
 
 **Email:** erw263 (at) msstate.edu
 :::
@@ -329,7 +327,7 @@ Research focus: Poultry reproductive physiology, bacterial pathogen mitigation, 
 
 **Award:** 2023 IFT Mid-South Section Scholarship ($2,000), PSA Travel Award ($1,500)
 
-**Now:** Lead Micribiologist at Ferrero
+**Now:** Lead Microbiologist at Ferrero
 :::
 :::
 :::
@@ -385,7 +383,7 @@ Research focus: Poultry reproductive physiology, bacterial pathogen mitigation, 
 
 **Award:** 2025 SCAD Travel Award ($250), IPPE Travel Award ($500)
 
-**Now:** Microbiologitst at Aviagen
+**Now:** Microbiologist at Aviagen
 :::
 :::
 :::

@@ -1,8 +1,16 @@
-.Rproj.user
-.Rhistory
-.RData
-.Ruserdata
-
 /.quarto/
+/_site/
 
-**/*.quarto_ipynb
+# Rendered output is not tracked on source branches during the redesign.
+# It is rendered and committed only on the preview branch (fork) and in
+# the final go-live commit. See README for the publishing workflow.
+/docs/
+
+# OS / editor junk
+.DS_Store
+**/.DS_Store
+Thumbs.db
+
+# R project leftovers (R is not used by this site)
+.Rproj.user/
+*.Rproj

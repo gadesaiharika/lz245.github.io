@@ -126,10 +126,6 @@ format:
             gtag('config', 'G-3B7N686V5Q');
           </script>
 
-# Bibliography settings for publications
-bibliography: publications.bib
-csl: styles/apa-cv.csl
-
 # Execution settings (for any computational content)
 execute:
   freeze: auto
