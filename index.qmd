@@ -14,8 +14,8 @@ listing:
     date-format: "MMMM D, YYYY"
 ---
 
-::: {.hero-home style="background-image: linear-gradient(100deg, rgba(30,8,8,.88) 0%, rgba(74,0,0,.72) 55%, rgba(74,0,0,.45) 100%), url('assets/images/team/lab-psa-2025.jpg');"}
-::: {.hero-inner}
+::: {.hero-home}
+::: {.hero-copy-panel}
 ::: {.hero-copy}
 [Zhang Lab · Mississippi State University]{.eyebrow}
 
@@ -32,6 +32,10 @@ food safe from farm to table.
 [Join the Lab](join.qmd){.btn-ghost}
 :::
 :::
+:::
+
+::: {.hero-photo}
+![](assets/images/team/lab-psa-2025.jpg){fig-alt="The Zhang Lab team at the 2025 Poultry Science Association meeting"}
 :::
 :::
 

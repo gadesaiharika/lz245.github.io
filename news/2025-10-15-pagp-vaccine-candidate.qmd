@@ -1,6 +1,7 @@
 ---
 title: "Reverse vaccinology points to pagP as a universal APEC vaccine candidate"
 date: 2025-10-15
+author: "Zhang Lab"
 description: >
   Published in the Journal of Applied Microbiology, our reverse vaccinology
   and host-pathogen analysis identifies pagP as a potential universal vaccine

@@ -1,17 +1,20 @@
 ---
-search: false
 title: "LAMP Assay Setup for Rapid Pathogen Detection"
-description: "Placeholder — content to be provided by the lab."
-date: 2026-01-01
-categories: [Molecular, Detection]
+description: "Loop-mediated isothermal amplification for rapid, field-deployable detection of foodborne pathogens."
+date: 2026-08-13
+categories: [Detection, Molecular]
 ---
 
-::: {.callout-note}
-## Placeholder — content coming soon
-This page reserves a spot in the Protocols section. The full procedure will be added by
-the lab. To fill it in, edit this file using [`_template.qmd`](_template.qmd) as a guide
-for the standard sections (Materials, Equipment, Safety, Procedure, Troubleshooting).
-:::
+**Scope.** Setup and execution of loop-mediated isothermal amplification
+(LAMP) assays for rapid detection of foodborne pathogens, including the
+*Clostridium perfringens* assay developed in our lab
+([Chaudhary et al. 2024](https://doi.org/10.1016/j.japr.2024.100513),
+[2025](https://doi.org/10.1016/j.japr.2025.100600)).
 
-**Intended scope:** Setup and run conditions for loop-mediated isothermal amplification
-(LAMP) assays used for rapid detection of foodborne pathogens.
+::: {.callout-note}
+## Full write-up in preparation
+The complete step-by-step procedure — primer design, reaction setup,
+incubation, and result interpretation — is being finalized for publication
+here. Until then, [email us](mailto:l.zhang@msstate.edu) for the current
+working version.
+:::

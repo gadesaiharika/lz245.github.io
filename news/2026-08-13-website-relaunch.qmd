@@ -1,6 +1,7 @@
 ---
 title: "The Zhang Lab website has a new look"
 date: 2026-08-13
+author: "Zhang Lab"
 description: >
   A full redesign of our lab website: a new visual identity, a faster and
   more accessible site, and a proper home for our research programs, people,

@@ -39,8 +39,8 @@ website:
     type: overlay
 
   navbar:
-    background: "#ffffff"
-    foreground: dark
+    background: "#660000"  # MSU maroon
+    foreground: light
     logo: assets/images/lab-logo.png
     logo-alt: "Zhang Lab Logo"
     title: "Zhang Lab"
@@ -54,6 +54,8 @@ website:
         href: research.qmd
       - text: "Publications"
         href: publications.qmd
+      - text: "Lab Protocols"
+        href: protocols/index.qmd
       - text: "News"
         href: news/index.qmd
       - text: "Teaching"

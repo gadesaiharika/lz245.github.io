@@ -1,6 +1,7 @@
 ---
 title: "Culturomics study of the broiler cecal microbiome published in Poultry Science"
 date: 2026-04-01
+author: "Zhang Lab"
 description: >
   Manhong Wang's paper maps the cultivable microbiota of broiler chicken
   ceca and enables targeted isolation of beneficial bacteria — a foundation

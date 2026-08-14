@@ -1,17 +1,17 @@
 ---
-search: false
 title: "Genomic DNA Extraction from Bacterial Isolates"
-description: "Placeholder — content to be provided by the lab."
-date: 2026-01-01
+description: "High-molecular-weight genomic DNA from pure bacterial cultures for whole-genome sequencing."
+date: 2026-08-13
 categories: [Molecular, Sequencing]
 ---
 
-::: {.callout-note}
-## Placeholder — content coming soon
-This page reserves a spot in the Protocols section. The full procedure will be added by
-the lab. To fill it in, edit this file using [`_template.qmd`](_template.qmd) as a guide
-for the standard sections (Materials, Equipment, Safety, Procedure, Troubleshooting).
-:::
+**Scope.** Extraction of high-molecular-weight genomic DNA from pure bacterial
+cultures, optimized for downstream whole-genome sequencing (Oxford Nanopore
+and Illumina).
 
-**Intended scope:** Extraction of high-molecular-weight genomic DNA from pure bacterial
-cultures for whole-genome sequencing.
+::: {.callout-note}
+## Full write-up in preparation
+The complete step-by-step procedure — materials, equipment, safety notes,
+and troubleshooting — is being finalized for publication here. Until then,
+[email us](mailto:l.zhang@msstate.edu) for the current working version.
+:::

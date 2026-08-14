@@ -21,7 +21,7 @@ $gold:        #d4a017 !default;  // accent on dark grounds
 $gold-ink:    #8a680e !default;  // accent on light grounds (AA on paper)
 $paper:       #faf7f2 !default;  // warm page ground
 $stone:       #f0eae0 !default;  // card / alternating band surface
-$band-dark:   #2b2123 !default;  // maroon-tinted charcoal band
+$band-dark:   #331013 !default;  // deep maroon-charcoal band
 $ink:         #26211e !default;
 $ink-soft:    #6b6259 !default;
 $line:        #e3dbcf !default;
@@ -42,9 +42,9 @@ $headings-font-family: "Fraunces", "Iowan Old Style", Georgia, serif !default;
 $headings-font-weight: 600 !default;
 $headings-color: $maroon-deep !default;
 
-$navbar-bg: #ffffff !default;
-$navbar-fg: $maroon !default;
-$navbar-hl: $gold-ink !default;
+$navbar-bg: $maroon !default;
+$navbar-fg: #ffffff !default;
+$navbar-hl: $gold !default;
 
 $table-border-color: $line !default;
 $code-block-bg: $stone !default;
@@ -112,37 +112,41 @@ h1, h2, h3 { text-wrap: balance; letter-spacing: -.01em; }
 /* ==== Navbar ======================================================= */
 
 .navbar {
-  background: #fff;
-  box-shadow: 0 1px 0 $line;
+  background: $maroon;
+  border-bottom: 3px solid $gold;
+  box-shadow: none;
   padding-top: .65rem;
   padding-bottom: .65rem;
 
-  .navbar-brand { color: $maroon; }
+  .navbar-brand { color: #fff; }
   .navbar-title {
     font-family: "Fraunces", Georgia, serif;
     font-weight: 600;
     font-size: 1.25rem;
-    color: $maroon;
+    color: #fff;
   }
   img.navbar-logo { max-height: 46px; height: 46px; width: auto; }
 
   .navbar-nav .nav-link {
     font-family: "Archivo", $font-family-sans-serif;
-    font-size: .82rem;
+    font-size: .8rem;
     font-weight: 600;
     letter-spacing: .1em;
     text-transform: uppercase;
-    color: $maroon-deep;
+    color: rgba(255, 255, 255, .88);
     padding-left: .8rem;
     padding-right: .8rem;
     border-bottom: 2px solid transparent;
 
-    &:hover, &:focus-visible { color: $gold-ink; }
-    &.active { color: $maroon; border-bottom-color: $gold; }
+    &:hover, &:focus-visible { color: $gold; }
+    &.active { color: #fff; border-bottom-color: $gold; }
   }
-  .navbar-toggler { color: $maroon; border-color: $line; }
+  .navbar-toggler { color: #fff; border-color: rgba(255, 255, 255, .35); }
+  .quarto-navbar-tools .quarto-navigation-tool { color: rgba(255, 255, 255, .88);
+    &:hover { color: $gold; } }
+  #quarto-search .aa-DetachedSearchButton { color: rgba(255, 255, 255, .88); }
 }
-.navbar.scrolled { box-shadow: 0 2px 14px rgba(38, 33, 30, .12); }
+.navbar.scrolled { box-shadow: 0 3px 16px rgba(38, 8, 8, .35); }
 
 /* ==== Buttons ====================================================== */
 
@@ -174,11 +178,11 @@ h1, h2, h3 { text-wrap: balance; letter-spacing: -.01em; }
     box-shadow: 0 10px 22px rgba(102, 0, 0, .22);
   }
 }
-.band-dark .btn-ghost, .band-maroon .btn-ghost {
+.band-dark .btn-ghost, .band-maroon .btn-ghost, .hero-home .btn-ghost {
   color: #fff; border-color: #fff;
   &:hover, &:focus-visible { background: #fff; color: $maroon; }
 }
-.band-dark .btn-maroon, .band-maroon .btn-maroon {
+.band-dark .btn-maroon, .band-maroon .btn-maroon, .hero-home .btn-maroon {
   background: $gold; border-color: $gold; color: $band-dark;
   &:hover, &:focus-visible { background: lighten($gold, 8%); border-color: lighten($gold, 8%); color: $band-dark; }
 }
@@ -213,34 +217,42 @@ h1, h2, h3 { text-wrap: balance; letter-spacing: -.01em; }
 .band-center { text-align: center; }
 .band-center p { max-width: 46rem; margin-left: auto; margin-right: auto; }
 
-/* ==== Homepage hero ================================================ */
+/* ==== Homepage hero (split: copy panel + unobscured photo) ========= */
 
 .hero-home {
-  position: relative;
-  min-height: min(88vh, 780px);
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+  min-height: min(80vh, 700px);
+  background: linear-gradient(120deg, #3d0a0a 0%, $maroon 55%, #7a1414 100%);
+  @media (max-width: 900px) { grid-template-columns: 1fr; }
+}
+.hero-home .hero-copy-panel {
   display: flex;
   align-items: center;
-  background-size: cover;
-  background-position: center 30%;
-  /* background-image set inline in index.qmd (real lab photo + maroon wash) */
+  padding: 4.5rem clamp(1.5rem, 4vw, 4rem);
+  @media (min-width: 1400px) { padding-left: calc((100vw - 1320px) / 2); }
 }
-.hero-home .hero-inner {
-  max-width: 1150px; margin: 0 auto; padding: 6rem 1.5rem;
-  width: 100%;
-}
-.hero-home .hero-copy { max-width: 44rem; }
+.hero-home .hero-copy { max-width: 40rem; }
 .hero-home h1 {
-  font-size: clamp(2.1rem, 5vw, 3.4rem);
+  font-size: clamp(2.1rem, 4.4vw, 3.2rem);
   line-height: 1.15;
   color: #fff;
   margin-bottom: 1.2rem;
   .accent-word { color: $gold; }
 }
 .hero-home .hero-lede {
-  font-size: 1.2rem; line-height: 1.6; color: #f2e9e4;
-  max-width: 38rem; margin-bottom: 2rem;
+  font-size: 1.18rem; line-height: 1.6; color: #f2e9e4;
+  max-width: 36rem; margin-bottom: 2rem;
 }
 .hero-home .eyebrow { color: $gold; }
+.hero-home .hero-photo {
+  position: relative;
+  min-height: 340px;
+  border-left: 6px solid $gold;
+  @media (max-width: 900px) { border-left: none; border-top: 6px solid $gold; }
+  p, img { position: absolute; inset: 0; width: 100%; height: 100%; margin: 0; }
+  img { object-fit: cover; object-position: center 32%; }
+}
 .hero-buttons { display: flex; flex-wrap: wrap; gap: .9rem; }
 
 /* ==== Cards ======================================================== */
@@ -379,7 +391,7 @@ h1, h2, h3 { text-wrap: balance; letter-spacing: -.01em; }
   font-family: "Archivo", $font-family-sans-serif;
   font-size: .72rem; font-weight: 600;
   letter-spacing: .1em; text-transform: uppercase;
-  color: $gold-ink; margin-bottom: .55rem;
+  color: $maroon; margin-bottom: .55rem;
 }
 .person-blurb { font-size: .9rem; color: $ink-soft; margin-bottom: .6rem; }
 .person-award { font-size: .82rem; color: $ink-soft; margin-bottom: .6rem;
@@ -431,12 +443,6 @@ h1, h2, h3 { text-wrap: balance; letter-spacing: -.01em; }
 }
 
 .pubs-page {
-  h2 {
-    font-size: 1.6rem;
-    border-left: 5px solid $gold;
-    padding-left: .9rem;
-    margin-top: 2.8rem;
-  }
   ol li { margin: .85rem 0; }
 }
 
@@ -504,6 +510,7 @@ div.quarto-post {
 
 .zl-footer {
   background: $band-dark;
+  border-top: 4px solid $gold;
   color: #cfc5bc;
   padding: 4rem 1.5rem 2rem;
   margin-top: 4.5rem;
@@ -568,6 +575,81 @@ div.quarto-post {
 /* ==== Content pages: shared polish ================================= */
 
 #quarto-content main.content { padding-top: 1.2rem; }
+
+/* Unified title block on every standard page: Fraunces title over a gold
+   rule, styled subtitle, and consistent uppercase meta (author / date /
+   categories) so no page header ever reads as an afterthought. */
+#title-block-header.quarto-title-block {
+  margin-bottom: 2.2rem;
+  padding-bottom: 1.6rem;
+  border-bottom: 1px solid $line;
+
+  .title {
+    font-size: clamp(2rem, 4vw, 2.7rem);
+    margin-bottom: 0;
+    &::after {
+      content: "";
+      display: block;
+      width: 64px; height: 4px;
+      background: $gold;
+      margin-top: .9rem;
+    }
+  }
+  .subtitle {
+    font-size: 1.15rem;
+    color: $ink-soft;
+    margin: .9rem 0 0;
+    font-family: $font-family-sans-serif;
+  }
+  .quarto-title-meta { margin-top: 1.3rem; column-gap: 2.2rem; }
+  .quarto-title-meta-heading {
+    font-family: "Archivo", $font-family-sans-serif;
+    font-size: .7rem;
+    font-weight: 600;
+    letter-spacing: .13em;
+    text-transform: uppercase;
+    color: $gold-ink;
+    margin-bottom: .15rem;
+    opacity: 1;
+  }
+  .quarto-title-meta-contents, .quarto-title-meta-contents p {
+    font-size: .95rem;
+    color: $ink;
+    margin: 0;
+  }
+  .quarto-title .quarto-categories { margin-top: .9rem; }
+}
+
+/* One heading treatment sitewide: section h2s carry a maroon rail.
+   (Homepage bands opt out — their h2s are display headings.) */
+main.content h2 {
+  font-size: 1.55rem;
+  border-left: 5px solid $maroon;
+  border-bottom: none;
+  padding-left: .9rem;
+  padding-bottom: 0;
+  margin-top: 2.6rem;
+}
+main.content .band h2,
+main.content .quarto-title h1 {
+  border-left: none;
+  padding-left: 0;
+}
+main.content h3 { font-size: 1.2rem; }
+
+/* Compact button variant (PI links, inline actions) */
+.btn-maroon.btn-sm, .btn-ghost.btn-sm {
+  padding: .45rem .95rem;
+  font-size: .72rem;
+  border-width: 1.5px;
+}
+
+/* Reusable inline CTA band (rounded, used mid-page) */
+.cta-inline {
+  border-radius: .9rem;
+  margin: 3rem 0 1rem;
+  padding: 3rem 2rem;
+}
 
 table.table thead th, table thead th {
   background: $maroon; color: #fff;

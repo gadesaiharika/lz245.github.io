@@ -1,5 +1,6 @@
 ---
 title: "People"
+subtitle: "The people behind the science — researchers, students, and alumni of the Zhang Lab"
 toc: false
 page-layout: full
 aliases:
@@ -25,10 +26,6 @@ listing:
     contents: ["data/people/undergrad.yml"]
     template: _templates/people-grid.ejs
 ---
-
-[Our Team]{.eyebrow}
-
-# The people [behind the]{.accent-word} science
 
 ## Principal Investigator
 
@@ -133,7 +130,7 @@ Ph.D. in Agriculture Biological Environmental & Energy Engineering, Jilin Univer
 - **Sadie White** (2019) — CALS/MAFES Undergraduate Research Scholar. [Now: Ph.D. Student, Mississippi State University]{.alum-now}
 :::
 
-::: {.band-maroon .band style="border-radius: .9rem; margin: 3rem 0 1rem; padding: 3rem 2rem;"}
+::: {.band-maroon .band .cta-inline}
 ::: {.band-center}
 ## Want to join [this]{.accent-word} team?
 

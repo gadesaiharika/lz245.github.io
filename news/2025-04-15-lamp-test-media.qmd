@@ -1,6 +1,7 @@
 ---
 title: "Our rapid C. perfringens test makes headlines"
 date: 2025-04-15
+author: "Zhang Lab"
 description: >
   The lab's LAMP-based rapid detection assay for Clostridium perfringens —
   a pathogen that costs the global poultry industry billions — was featured

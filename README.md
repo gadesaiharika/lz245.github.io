@@ -87,12 +87,13 @@ section, following the existing format (bold **Zhang, L.**, `\*` marks
 corresponding author, DOI link at the end). Update the count in the
 `.pub-stats` block if it crosses a threshold.
 
-### Protocols
+### Add a protocol
 
-`protocols/` exists but is hidden from the navbar until it has real content.
-To relaunch it: write at least 3 protocols using `protocols/_template.qmd`,
-remove `search: false` from their front matter, and add the nav item back in
-`_quarto.yml`.
+Copy `protocols/_template.qmd` to `protocols/short-name.qmd` and fill in the
+standard sections (Materials, Equipment, Safety, Procedure, Troubleshooting).
+Set `title`, `description`, `date`, and `categories` in the front matter —
+the Lab Protocols table picks it up automatically. Photos go in
+`assets/images/` (run the image pipeline after adding).
 
 ---
 

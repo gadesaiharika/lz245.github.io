@@ -1,5 +1,4 @@
 ---
-search: false
 title: "Lab Protocols"
 subtitle: "Standard operating procedures used in the Zhang Lab"
 toc: false
@@ -17,8 +16,14 @@ listing:
     description: "Summary"
 ---
 
-Protocols below are shared for transparency and for training lab members. They are
-provided as-is for reference; validate any procedure against your own institutional
-biosafety and standard operating requirements before use.
+We share our protocols for transparency, reproducibility, and training. This
+library is growing — protocols are added as they are validated and written up,
+alongside photos and step-by-step documentation from the bench.
 
-Questions about a protocol? [Contact us](mailto:l.zhang@msstate.edu).
+Protocols are provided as-is for reference; validate any procedure against
+your own institutional biosafety and standard operating requirements before
+use.
+
+Questions about a protocol, or need one before it's published here?
+[Contact us](mailto:l.zhang@msstate.edu) — we're happy to share current
+working versions.

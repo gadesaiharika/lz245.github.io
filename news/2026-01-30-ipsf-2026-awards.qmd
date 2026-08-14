@@ -1,6 +1,7 @@
 ---
 title: "Sunita and Manhong bring home awards from IPSF 2026"
 date: 2026-01-30
+author: "Zhang Lab"
 description: >
   Ph.D. student Sunita Shrestha won Best Oral Presentation in the SCAD
   category, and Manhong Wang received a Certificate of Excellence in
