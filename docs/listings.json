@@ -1,0 +1,33 @@
+[
+  {
+    "listing": "/protocols/index.html",
+    "items": [
+      "/protocols/genomic-dna-extraction.html",
+      "/protocols/lamp-assay-setup.html"
+    ]
+  },
+  {
+    "listing": "/people.html",
+    "items": []
+  },
+  {
+    "listing": "/index.html",
+    "items": [
+      "/news/2026-08-13-website-relaunch.html",
+      "/news/2026-04-01-culturomics-poultry-science.html",
+      "/news/2026-01-30-ipsf-2026-awards.html",
+      "/news/2025-10-15-pagp-vaccine-candidate.html",
+      "/news/2025-04-15-lamp-test-media.html"
+    ]
+  },
+  {
+    "listing": "/news/index.html",
+    "items": [
+      "/news/2026-08-13-website-relaunch.html",
+      "/news/2026-04-01-culturomics-poultry-science.html",
+      "/news/2026-01-30-ipsf-2026-awards.html",
+      "/news/2025-10-15-pagp-vaccine-candidate.html",
+      "/news/2025-04-15-lamp-test-media.html"
+    ]
+  }
+]
