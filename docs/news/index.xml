@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Zhang Lab | Agricultural Microbiomes &amp; Food Safety</title>
+<link>https://lz245.github.io/news/</link>
+<atom:link href="https://lz245.github.io/news/index.xml" rel="self" type="application/rss+xml"/>
+<description>Agricultural Microbiomes, Microbial Genomics, and Food Safety Research at Mississippi State University</description>
+<generator>quarto-1.10.18</generator>
+<lastBuildDate>Thu, 13 Aug 2026 05:00:00 GMT</lastBuildDate>
+<item>
+  <title>The Zhang Lab website has a new look</title>
+  <dc:creator>Zhang Lab</dc:creator>
+  <link>https://lz245.github.io/news/2026-08-13-website-relaunch.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Welcome to the redesigned Zhang Lab website.</p>
+<p>The relaunch brings a new visual identity in MSU maroon and gold, a data-driven <a href="../people.html">People</a> page, our full <a href="../publications.html">publication record</a>, and this news feed — where we’ll share papers, awards, and lab milestones.</p>
+<p>The site remains open source on <a href="https://github.com/lz245/lz245.github.io">GitHub</a>. If something looks off or is hard to use, <a href="mailto:l.zhang@msstate.edu">tell us</a> — accessibility feedback is always welcome.</p>
+
+
+
+<a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
+  <category>Announcements</category>
+  <guid>https://lz245.github.io/news/2026-08-13-website-relaunch.html</guid>
+  <pubDate>Thu, 13 Aug 2026 05:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Culturomics study of the broiler cecal microbiome published in Poultry Science</title>
+  <dc:creator>Zhang Lab</dc:creator>
+  <link>https://lz245.github.io/news/2026-04-01-culturomics-poultry-science.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Our culturomics study, led by Ph.D.&nbsp;student <strong>Manhong Wang</strong>, is out in <em>Poultry Science</em>:</p>
+<blockquote class="blockquote">
+<p>Wang, M., Ye, X., Hsu, C.Y., Fugate, H., Zhang, X., Adhikari, P.A., Fan, P., Elliott, K., Macklin, K., &amp; Zhang, L. (2026). Application of culturomics to explore the cultivable microbiota and enable targeted bacterial isolation from the ceca of broiler chickens. <em>Poultry Science</em>, 105(4), 106527. <a href="https://doi.org/10.1016/j.psj.2026.106527">DOI</a></p>
+</blockquote>
+<p>The work systematically cultures the broiler cecal microbiome — turning “unculturable” community members into isolates we can actually study and deploy. It is a key step toward identifying probiotic candidates that improve poultry health and reduce pathogen colonization.</p>
+
+
+
+<a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
+  <category>Publications</category>
+  <guid>https://lz245.github.io/news/2026-04-01-culturomics-poultry-science.html</guid>
+  <pubDate>Wed, 01 Apr 2026 05:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Sunita and Manhong bring home awards from IPSF 2026</title>
+  <dc:creator>Zhang Lab</dc:creator>
+  <link>https://lz245.github.io/news/2026-01-30-ipsf-2026-awards.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Two of our Ph.D.&nbsp;students were recognized at the 2026 International Poultry Scientific Forum (IPSF) in Atlanta.</p>
+<p><strong>Sunita Shrestha</strong> won the <strong>Best Oral Presentation Award</strong> in the SCAD category for her work on vaccine candidate identification against avian pathogens using reverse vaccinology.</p>
+<p><strong>Manhong Wang</strong> received a <strong>Certificate of Excellence in Pathology</strong> and an <strong>IPSF Travel Award</strong> for his culturomics research on the broiler cecal microbiome.</p>
+<p>Congratulations to both — this is what a strong year looks like.</p>
+
+
+
+<a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
+  <category>Awards</category>
+  <guid>https://lz245.github.io/news/2026-01-30-ipsf-2026-awards.html</guid>
+  <pubDate>Fri, 30 Jan 2026 06:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Reverse vaccinology points to pagP as a universal APEC vaccine candidate</title>
+  <dc:creator>Zhang Lab</dc:creator>
+  <link>https://lz245.github.io/news/2025-10-15-pagp-vaccine-candidate.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Avian pathogenic <em>E. coli</em> (APEC) is one of the costliest bacterial diseases in poultry production. In work published in the <em>Journal of Applied Microbiology</em>, our team used <strong>reverse vaccinology</strong> — pangenome analysis and in-silico antigen prediction — to identify <strong><em>pagP</em></strong> as a potential universal vaccine candidate:</p>
+<blockquote class="blockquote">
+<p>Jia, L., Ye, X., Arick, M.A., Hsu, C.Y., Evans, J.D., Robinson, K., Adhikari, P., &amp; Zhang, L. (2025). Reverse vaccinology and host-pathogen analysis reveal pagP as a potential universal vaccine candidate against avian pathogenic <em>Escherichia coli</em> in poultry. <em>Journal of Applied Microbiology</em>, 136(10), lxaf253. <a href="https://doi.org/10.1093/jambio/lxaf253">DOI</a></p>
+</blockquote>
+<p>The vaccine-development program behind this work was featured by <em>MAFES Discovers</em> in <a href="https://www.mafes.msstate.edu/discovers/article.php?id=321">“Fowl Play: MSU Scientists Develop Chicken Vaccine to Combat Bacteria”</a>.</p>
+
+
+
+<a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
+  <category>Publications</category>
+  <category>Media</category>
+  <guid>https://lz245.github.io/news/2025-10-15-pagp-vaccine-candidate.html</guid>
+  <pubDate>Wed, 15 Oct 2025 05:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Our rapid C. perfringens test makes headlines</title>
+  <dc:creator>Zhang Lab</dc:creator>
+  <link>https://lz245.github.io/news/2025-04-15-lamp-test-media.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p><em>Clostridium perfringens</em> causes necrotic enteritis, a disease estimated to cost the global poultry industry billions of dollars every year. Our lab developed a <strong>loop-mediated isothermal amplification (LAMP) assay</strong> that detects the pathogen rapidly and is practical outside a central laboratory.</p>
+<p>The work drew media attention this spring:</p>
+<ul>
+<li><a href="https://www.mafes.msstate.edu/discovers/article.php?id=350"><strong>Billion-Dollar Bacteria Breakthrough</strong></a> — <em>MAFES Discovers</em></li>
+<li><a href="https://www.the-microbiologist.com/news/ami-members-develop-rapid-test-for-bacterium-that-costs-poultry-industry-billions-globally/5598.article"><strong>AMI Members Develop Rapid Test for Bacterium That Costs Poultry Industry Billions Globally</strong></a> — <em>The Microbiologist</em></li>
+</ul>
+<p>The underlying research on assay optimization and DNA extraction methods is published in the <em>Journal of Applied Poultry Research</em> (<a href="https://doi.org/10.1016/j.japr.2024.100513">2024</a>, <a href="https://doi.org/10.1016/j.japr.2025.100600">2025</a>).</p>
+
+
+
+<a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
+  <category>Media</category>
+  <guid>https://lz245.github.io/news/2025-04-15-lamp-test-media.html</guid>
+  <pubDate>Tue, 15 Apr 2025 05:00:00 GMT</pubDate>
+</item>
+</channel>
+</rss>

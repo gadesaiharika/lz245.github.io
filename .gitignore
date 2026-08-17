@@ -1,10 +1,9 @@
 /.quarto/
 /_site/
 
-# Rendered output is not tracked on source branches during the redesign.
-# It is rendered and committed only on the preview branch (fork) and in
-# the final go-live commit. See README for the publishing workflow.
-/docs/
+# NOTE: docs/ IS tracked — GitHub Pages serves the site from main:/docs.
+# Always run `quarto render` and commit docs/ together with your source
+# changes, or the live site will not update. See README.
 
 # OS / editor junk
 .DS_Store

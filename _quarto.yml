@@ -10,6 +10,8 @@ project:
     - "!docs/**"
   resources:
     - "assets/**"
+    # Disables GitHub Pages' Jekyll processing of the rendered output.
+    - ".nojekyll"
 
 # Build profiles:
 #   prod    (default) — indexable, Google Analytics on. `quarto render` = production.
