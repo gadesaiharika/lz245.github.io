@@ -1,0 +1,9 @@
+# Preview profile — used for fork preview builds only.
+#   PowerShell:  $env:QUARTO_PROFILE="preview"; quarto render
+# Not indexable, no analytics, so preview browsing never pollutes
+# search results or the production Google Analytics property.
+format:
+  html:
+    include-in-header:
+      - text: |
+          <meta name="robots" content="noindex, nofollow">

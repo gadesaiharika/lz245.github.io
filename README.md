@@ -1,393 +1,134 @@
 # Zhang Lab Website
 
-[![Website](https://img.shields.io/badge/website-live-brightgreen)](https://lz245.github.io)
-[![Quarto](https://img.shields.io/badge/built%20with-Quarto-blue)](https://quarto.org)
+Source for **https://lz245.github.io** — the Zhang Lab (Agricultural
+Microbiomes & Food Safety, Department of Poultry Science, Mississippi State
+University).
 
-Professional academic research lab website for the **Zhang Lab** at Mississippi State University, Department of Poultry Science. Built with [Quarto](https://quarto.org) and hosted on GitHub Pages.
-
-**Research Focus:** Agricultural microbiomes, pathogen genomics, vaccine development, rapid diagnostics
-
----
-
-## 📋 Table of Contents
-
-- [Site Structure](#-site-structure)
-- [File Reference](#-file-reference)
-- [Quick Start](#-quick-start)
-- [Common Tasks](#-common-tasks)
-- [Deployment](#-deployment)
-- [Versioning & Releases](#-versioning--releases)
-- [Troubleshooting](#-troubleshooting)
-- [Resources](#-resources)
+Built with [Quarto](https://quarto.org). Served free by GitHub Pages from the
+`docs/` folder on `main`.
 
 ---
 
-## 📁 Site Structure
+## How publishing works (read this first)
+
+GitHub Pages serves whatever is in **`main:/docs`**. Nothing deploys
+automatically from source files — you must render locally and commit the
+result:
 
 ```
-lz245.github.io/
-│
-├── 📄 CONTENT FILES (edit these regularly)
-│   ├── index.qmd                # Homepage - news, highlights, intro
-│   ├── research.qmd             # Research programs and projects
-│   ├── publications.qmd         # Publication list by year
-│   ├── team.qmd                 # Lab members and alumni
-│   ├── teaching.qmd             # Courses and student awards
-│   └── join.qmd                 # Prospective students/postdocs
-│
-├── 📊 DATA FILES (structured data)
-│   ├── _data/
-│   │   └── team.yml             # Team member data (optional, for R-based team page)
-│   └── publications.bib         # BibTeX bibliography (optional)
-│
-├── 🎨 STYLING & CONFIG
-│   ├── _quarto.yml              # ⭐ Main site configuration
-│   ├── styles/
-│   │   ├── custom.scss          # Colors, fonts, custom CSS
-│   │   ├── custom.css           # Additional CSS overrides
-│   │   └── apa-cv.csl           # Citation format style
-│   └── CNAME                    # Custom domain (if using)
-│
-├── 📸 ASSETS
-│   └── assets/
-│       └── images/
-│           ├── team/            # Member photos (300x300px recommended)
-│           ├── lab-logo.png     # Lab logo
-│           └── ...              # Other images
-│
-├── ⚙️ BUILD & DEPLOY
-│   ├── .github/
-│   │   └── workflows/
-│   │       └── publish.yml      # GitHub Actions auto-deploy
-│   ├── .gitignore               # Files to exclude from git
-│   └── README.md                # This file
-│
-└── 📦 OUTPUT (auto-generated, do not edit)
-    ├── docs/                   # Rendered website files
-    ├── _freeze/                 # Quarto computation cache
-    └── .quarto/                 # Quarto cache
-```
-
----
-
-## 📖 File Reference
-
-### Content Pages
-
-| File | Purpose | Update Frequency |
-|------|---------|------------------|
-| `index.qmd` | Homepage with lab intro, news, featured publications | Monthly (news updates) |
-| `research.qmd` | Research programs and active projects | Annually or when grants change |
-| `publications.qmd` | Complete publication list by year | When papers are published |
-| `team.qmd` | Current members, alumni, lab photos | When team changes |
-| `teaching.qmd` | Courses, student awards | Each semester |
-| `join.qmd` | Open positions, application info | When positions open/close |
-
-### Configuration Files
-
-| File | Purpose | When to Edit |
-|------|---------|--------------|
-| `_quarto.yml` | Site title, navigation, URL, analytics | Initial setup, rarely after |
-| `styles/custom.scss` | Colors, fonts, spacing | To change visual theme |
-| `CNAME` | Custom domain name | If using custom domain |
-
-### Data Files
-
-| File | Purpose | Format |
-|------|---------|--------|
-| `_data/team.yml` | Structured team data (optional) | YAML |
-| `publications.bib` | Bibliography for R-based pub page | BibTeX |
-
----
-
-## 🚀 Quick Start
-
-### Prerequisites
-
-- [Quarto](https://quarto.org/docs/get-started/) (1.4+)
-- [Git](https://git-scm.com/)
-- Text editor (VS Code, RStudio, or any editor)
-
-> **Note:** R is NOT required for the current setup. The site uses static Markdown pages.
-
-### Local Development
-
-```bash
-# Clone the repository
-git clone https://github.com/lz245/lz245.github.io.git
-cd lz245.github.io
-
-# Preview locally (opens browser with live reload)
-quarto preview
-
-# Render the site (generates docs/ folder)
-quarto render
-```
-
-### Making Changes
-
-```bash
-# 1. Edit files (e.g., add a publication)
-#    Open publications.qmd and add entry
-
-# 2. Preview changes
-quarto preview
-
-# 3. Commit and push
-git add .
-git commit -m "Add 2025 publication: Jia et al. pagP vaccine"
-git push origin main
-
-# 4. GitHub Actions auto-deploys (wait ~2 minutes)
-```
-
----
-
-## 🔄 Common Tasks
-
-### Adding a New Publication
-
-1. Open `publications.qmd`
-2. Add entry under the appropriate year section:
-   ```markdown
-   ## 2025
-   
-   1. **Zhang, L.**, Author, B., & Author, C. (2025). Paper title here. 
-      *Journal Name*, 10(2), 123-456. [DOI](https://doi.org/10.xxxx/xxxxx)
-   ```
-3. Commit: `git commit -m "Add publication: Author et al. 2025"`
-
-### Adding a New Team Member
-
-1. Open `team.qmd`
-2. Add under appropriate section (Graduate Students, Undergrad, etc.):
-   ```markdown
-   ::: {.member-card}
-   
-   ![Name Photo](assets/images/team/firstname-lastname.jpg){.member-photo}
-   
-   ### FirstName LastName
-   
-   **Ph.D. Student** | Expected 2028
-   
-   **Research:** Brief description of research focus
-   
-   Bio paragraph here...
-   
-   :::
-   ```
-3. Add photo to `assets/images/team/` (square, 300x300px minimum)
-4. Commit: `git commit -m "Add new PhD student: Name"`
-
-### Moving a Student to Alumni
-
-1. Cut their entry from the current students section
-2. Paste into the Alumni section with updated format:
-   ```markdown
-   ::: {.alumni-card}
-   
-   **Dr. Name** (Ph.D. 2025)  
-   *Thesis: Thesis title here*  
-   **Now:** Current position
-   
-   :::
-   ```
-
-### Updating News on Homepage
-
-1. Open `index.qmd`
-2. Find the "Recent News" section
-3. Add new item at top, remove oldest item:
-   ```markdown
-   - **Jan 2025** - Dr. Zhang appointed NE-2442 Senior Executive
-   ```
-
-### Changing Site Colors
-
-Edit `styles/custom.scss`:
-```scss
-// MSU Maroon (current)
-$primary: #5D1725;
-
-// To change to different institution colors:
-// Auburn Orange: $primary: #DD550C;
-// UGA Red: $primary: #BA0C2F;
-```
-
----
-
-## 📤 Deployment
-
-### Automatic (Recommended)
-
-GitHub Actions automatically deploys when you push to `main`:
-
-1. Push changes: `git push origin main`
-2. Check progress: Repository → Actions tab
-3. Site updates in ~2 minutes at https://lz245.github.io
-
-### Manual (Backup Method)
-
-```bash
-# Render locally
-quarto render
-
-# Commit the docs folder
-git add docs
-git commit -m "Manual render"
+# 1. edit source files (.qmd, data/, styles/)
+quarto render          # writes the site into docs/
+git add -A
+git commit -m "Describe your change"
 git push
 ```
 
-Then in GitHub Settings → Pages → Source: "Deploy from branch" → `main` → `/docs`
+Live in ~1–3 minutes. If you push source changes **without** rendering,
+the live site does not change.
+
+Requirements: [Quarto CLI](https://quarto.org/docs/get-started/) (this site
+was built with Quarto **1.10**; use 1.10+ so rendered output stays
+consistent). No R or Python needed.
+
+Preview while editing: `quarto preview`
 
 ---
 
-## 🏷️ Versioning & Releases
+## Everyday edits
 
-### Version Numbering
+### Add a news post
 
-We use [Semantic Versioning](https://semver.org/):
+Create `news/YYYY-MM-DD-short-slug.qmd`:
 
-```
-v[MAJOR].[MINOR].[PATCH]
+```markdown
+---
+title: "Sunita wins a travel award"
+date: 2026-09-15
+description: >
+  One or two sentences shown in news listings and on the homepage.
+categories: [Awards]        # Awards | Publications | Media | Announcements
+---
 
-MAJOR: Complete redesign or breaking changes
-MINOR: New sections, significant content additions
-PATCH: Bug fixes, typos, small updates
-```
-
-### Current Version
-
-**v1.2.0** (August 2026) - Added 2026 publications; fixed repeat-render failure
-
-### Creating a Release
-
-When making major updates:
-
-```bash
-# 1. Update version in this README (Current Version section above)
-
-# 2. Commit all changes
-git add .
-git commit -m "Prepare release v1.1.0"
-
-# 3. Create annotated tag
-git tag -a v1.1.0 -m "Release v1.1.0: Added 2025 publications and new team members"
-
-# 4. Push with tags
-git push origin main --tags
+Body of the post in plain Markdown.
 ```
 
-### Creating a GitHub Release
+The News page and the homepage "Latest updates" strip pick it up
+automatically on the next render.
 
-1. Go to repository → Releases → "Create a new release"
-2. Choose existing tag (e.g., `v1.1.0`)
-3. Title: `v1.1.0 - January 2025 Update`
-4. Description: List major changes
-5. Click "Publish release"
+### Add or update a lab member
 
-### Changelog
+People cards are generated from YAML files in `data/people/` —
+`faculty.yml`, `staff.yml`, `postdocs.yml`, `phd.yml`, `ms.yml`,
+`undergrad.yml`. Add a block:
 
-Newest first.
+```yaml
+- name: Jane Doe
+  role: Ph.D. Student, Poultry Science
+  photo: assets/images/team/jane-doe.jpg   # optional; card shows initials without it
+  blurb: One or two sentences about their research.
+  award: Optional award line
+  email: jd123@msstate.edu
+  scholar: https://scholar.google.com/...   # optional
+```
 
-| Version | Date | Changes |
-|---------|------|---------|
-| v1.2.0 | Aug 2026 | Added a 2026 publications section with 9 papers (6 new; 3 promoted from in-press) |
-| | | Updated 3 entries that were listed as Submitted / Accepted / Minor revision to their published citations |
-| | | Backfilled 5 missing 2025 publications; the 2025 list now matches Google Scholar |
-| | | Corrected volume/issue on 2 existing 2025 entries (Lyte 104(7), Huang 24(8)) |
-| | | Replaced the placeholder Google Scholar profile link |
-| | | Fixed `_quarto.yml` so repeat `quarto render` runs no longer fail on `.qmd` files copied into `docs/` |
-| v1.1.0 | Aug 2026 | Added Lab Protocols section with a reusable template and two protocol pages |
-| | | Added News section with a date-ordered listing |
-| | | Tagged retroactively — released via PR #1 before tagging was in use |
-| v1.0.0 | Jan 2025 | Initial release: Complete site with team, publications, research, teaching |
-| | | Added all current graduate students and alumni |
-| | | 67+ publications |
-| | | 6 research program areas |
+Drop the photo (any size) into `assets/images/team/`, then run the image
+pipeline once so the site never ships huge camera files:
 
-### When to Tag a Release
+```
+powershell -ExecutionPolicy Bypass -File scripts\optimize-images.ps1
+```
 
-- ✅ **Do tag:** New academic year updates, major content overhaul, site redesign
-- ✅ **Do tag:** After adding 5+ publications, major updates
-- ❌ **Don't tag:** Single typo fix, minor text edit, adding one news item
+Alumni are edited directly in `people.qmd` (the "Alumni" section).
+
+### Add a publication
+
+Edit `publications.qmd` — add a numbered entry at the top of the right year
+section, following the existing format (bold **Zhang, L.**, `\*` marks
+corresponding author, DOI link at the end). Update the count in the
+`.pub-stats` block if it crosses a threshold.
+
+### Add a protocol
+
+Copy `protocols/_template.qmd` to `protocols/short-name.qmd` and fill in the
+standard sections (Materials, Equipment, Safety, Procedure, Troubleshooting).
+Set `title`, `description`, `date`, and `categories` in the front matter —
+the Lab Protocols table picks it up automatically. Photos go in
+`assets/images/` (run the image pipeline after adding).
 
 ---
 
-## 🔧 Troubleshooting
+## Design system
 
-### Site not updating after push
+All styling lives in `styles/custom.scss` (tokens at the top: MSU maroon
+`#660000`, gold `#d4a017`, warm paper ground). Fonts are self-hosted in
+`assets/fonts/` (Fraunces / Archivo / Source Sans 3) — no external font
+requests. The site footer is `_partials/site-tail.html`, injected on every
+page; lab contact details live there and only there.
 
-1. Check GitHub Actions: Repository → Actions
-2. Look for failed workflows (red X)
-3. Common fixes:
-   - YAML syntax error → Check indentation (use spaces, not tabs)
-   - Missing file → Verify file paths are correct
+Accessibility: color pairs are WCAG AA; all motion respects
+`prefers-reduced-motion`; every image needs alt text.
 
-### Images not displaying
+## Build profiles
 
-1. Check file path matches exactly (case-sensitive)
-2. Use lowercase extensions: `.jpg` not `.JPG`
-3. Verify file exists in `assets/images/`
+- `quarto render` — **production** (default): indexable, Google Analytics on.
+- Preview builds (for staging on a fork):
+  `$env:QUARTO_PROFILE="preview"; quarto render` — adds `noindex`, no
+  analytics.
 
-### Local preview looks different from live site
+## Repo layout
 
-```bash
-# Clear all caches
-rm -rf docs _freeze .quarto
-
-# Fresh render
-quarto render
 ```
-
-### "Quarto not found" error
-
-Install Quarto: https://quarto.org/docs/get-started/
-
-### Merge conflicts
-
-```bash
-# If you edited on GitHub and locally
-git pull --rebase origin main
-# Resolve conflicts in editor, then:
-git add .
-git rebase --continue
-git push
+_quarto.yml            site config (nav, profiles, theme)
+_quarto-prod.yml       production profile (GA, robots)
+_quarto-preview.yml    preview profile (noindex)
+_partials/             footer + site JS (injected every page)
+_templates/            EJS templates for generated grids (people)
+data/people/           lab-member data (one YAML per role group)
+news/                  news posts (one .qmd per post)
+protocols/             protocol pages (hidden from nav until populated)
+assets/images/         images (run scripts/optimize-images.ps1 after adding)
+assets/fonts/          self-hosted WOFF2 fonts
+styles/custom.scss     the entire design system
+scripts/               maintenance scripts
+docs/                  RENDERED OUTPUT — never edit by hand
 ```
-
----
-
-## 📚 Resources
-
-### Quarto Documentation
-- [Quarto Websites](https://quarto.org/docs/websites/)
-- [Quarto Markdown Basics](https://quarto.org/docs/authoring/markdown-basics.html)
-- [Quarto Publishing](https://quarto.org/docs/publishing/github-pages.html)
-
-### GitHub
-- [GitHub Pages](https://docs.github.com/en/pages)
-- [GitHub Actions](https://docs.github.com/en/actions)
-
-### Icons
-- [Bootstrap Icons](https://icons.getbootstrap.com/)
-- [Emoji Cheat Sheet](https://www.webfx.com/tools/emoji-cheat-sheet/)
-
----
-
-## 🙏 Acknowledgments
-
-- Built with [Quarto](https://quarto.org) by Posit
-- Hosted on [GitHub Pages](https://pages.github.com)
-- Inspired by academic website best practices
-
----
-
-## 📞 Contact
-
-**Li Zhang, Ph.D.**  
-Assistant Professor  
-Department of Poultry Science  
-Mississippi State University  
-
-📧 l.zhang@msstate.edu  
-🌐 https://lz245.github.io

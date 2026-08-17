@@ -1,747 +1,675 @@
+/*
+  Zhang Lab design system
+  ------------------------------------------------------------------
+  Layered on top of Bootstrap 5 + cosmo via _quarto.yml:
+      theme: [cosmo, styles/custom.scss]
+
+  Identity: MSU maroon + gold on warm paper.
+  Type:     Fraunces (display) / Archivo (UI caps) / Source Sans 3 (body),
+            self-hosted from assets/fonts (no external font requests).
+
+  Sections: scss:defaults overrides theme variables (first definition wins);
+            scss:rules appends component CSS after the theme.
+*/
+
 /*-- scss:defaults --*/
 
-// Color variables - adjust for your institution
-$primary: #660000;        // MSU Maroon - change for your school
-$secondary: #333333;
-$accent: #d4a017;         // Gold accent
-$light-bg: #f8f9fa;
-$dark-bg: #1a1a2e;
-$text-primary: #2c3e50;
-$text-secondary: #6c757d;
-$link-color: #660000;
-$link-hover: #8b0000;
+// ---- Brand palette -------------------------------------------------
+$maroon:      #660000 !default;  // MSU maroon (primary)
+$maroon-deep: #4a0000 !default;
+$gold:        #d4a017 !default;  // accent on dark grounds
+$gold-ink:    #8a680e !default;  // accent on light grounds (AA on paper)
+$paper:       #faf7f2 !default;  // warm page ground
+$stone:       #f0eae0 !default;  // card / alternating band surface
+$band-dark:   #331013 !default;  // deep maroon-charcoal band
+$ink:         #26211e !default;
+$ink-soft:    #6b6259 !default;
+$line:        #e3dbcf !default;
 
-// Typography
-$font-family-sans-serif: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-$font-family-serif: 'Source Serif Pro', Georgia, 'Times New Roman', serif;
-$headings-font-family: $font-family-sans-serif;
-$headings-font-weight: 600;
+// ---- Bootstrap variable mapping ------------------------------------
+$primary:   $maroon !default;
+$secondary: $ink-soft !default;
+$body-bg:    $paper !default;
+$body-color: $ink !default;
+$link-color: $maroon !default;
+$link-decoration: underline !default;
+$border-radius: .5rem !default;
 
-// Spacing
-$spacer: 1rem;
+$font-family-sans-serif: "Source Sans 3", "Segoe UI", system-ui, -apple-system, sans-serif !default;
+$font-size-base: 1.05rem !default;
+$line-height-base: 1.65 !default;
+$headings-font-family: "Fraunces", "Iowan Old Style", Georgia, serif !default;
+$headings-font-weight: 600 !default;
+$headings-color: $maroon-deep !default;
+
+$navbar-bg: $maroon !default;
+$navbar-fg: #ffffff !default;
+$navbar-hl: $gold !default;
+
+$table-border-color: $line !default;
+$code-block-bg: $stone !default;
+
+// Content grid: roomy article column, no unused sidebar gutter.
+$grid-sidebar-width: 0px !default;
+$grid-body-width: 950px !default;
+$grid-margin-width: 260px !default;
 
 /*-- scss:rules --*/
 
-// ============================================
-// GLOBAL STYLES
-// ============================================
+/* ==== Self-hosted fonts ============================================ */
+/* Theme CSS is emitted into site_libs/bootstrap/, so font paths are
+   relative from there. Works at the root domain and under a subpath. */
 
-body {
-  color: $text-primary;
-  line-height: 1.7;
+@font-face { font-family: "Fraunces"; font-style: normal; font-weight: 400; font-display: swap;
+  src: url("assets/fonts/fraunces-400-normal.woff2") format("woff2"); }
+@font-face { font-family: "Fraunces"; font-style: italic; font-weight: 400; font-display: swap;
+  src: url("assets/fonts/fraunces-400-italic.woff2") format("woff2"); }
+@font-face { font-family: "Fraunces"; font-style: normal; font-weight: 600; font-display: swap;
+  src: url("assets/fonts/fraunces-600-normal.woff2") format("woff2"); }
+@font-face { font-family: "Fraunces"; font-style: italic; font-weight: 600; font-display: swap;
+  src: url("assets/fonts/fraunces-600-italic.woff2") format("woff2"); }
+@font-face { font-family: "Archivo"; font-style: normal; font-weight: 500; font-display: swap;
+  src: url("assets/fonts/archivo-500-normal.woff2") format("woff2"); }
+@font-face { font-family: "Archivo"; font-style: normal; font-weight: 600; font-display: swap;
+  src: url("assets/fonts/archivo-600-normal.woff2") format("woff2"); }
+@font-face { font-family: "Source Sans 3"; font-style: normal; font-weight: 400; font-display: swap;
+  src: url("assets/fonts/source-sans-3-400-normal.woff2") format("woff2"); }
+@font-face { font-family: "Source Sans 3"; font-style: italic; font-weight: 400; font-display: swap;
+  src: url("assets/fonts/source-sans-3-400-italic.woff2") format("woff2"); }
+@font-face { font-family: "Source Sans 3"; font-style: normal; font-weight: 600; font-display: swap;
+  src: url("assets/fonts/source-sans-3-600-normal.woff2") format("woff2"); }
+@font-face { font-family: "Source Sans 3"; font-style: normal; font-weight: 700; font-display: swap;
+  src: url("assets/fonts/source-sans-3-700-normal.woff2") format("woff2"); }
+
+/* ==== Base ========================================================= */
+
+h1, h2, h3 { text-wrap: balance; letter-spacing: -.01em; }
+::selection { background: $maroon; color: #fff; }
+
+/* Gold accent word inside display headings: [rooted in]{.accent-word} */
+.accent-word {
+  font-style: italic;
+  font-weight: 400;
+  color: $gold-ink;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  color: $text-primary;
-  margin-top: 1.5em;
-  margin-bottom: 0.75em;
+.eyebrow {
+  display: block;
+  font-family: "Archivo", $font-family-sans-serif;
+  font-size: .8rem;
+  font-weight: 600;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: $gold-ink;
+  margin-bottom: .6rem;
 }
 
-a {
-  color: $link-color;
-  text-decoration: none;
-  transition: color 0.2s ease;
-  
-  &:hover {
-    color: $link-hover;
-    text-decoration: underline;
-  }
+.rule-gold {
+  width: 64px; height: 3px; background: $gold;
+  border: none; opacity: 1; margin: 1rem auto 1.5rem;
 }
 
-// ============================================
-// HOMEPAGE HERO SECTION
-// ============================================
-
-.hero-banner {
-  background: linear-gradient(135deg, $primary 0%, darken($primary, 15%) 100%);
-  color: white;
-  padding: 4rem 2rem;
-  margin: -1rem -1rem 2rem -1rem;
-  text-align: center;
-  
-  @media (min-width: 768px) {
-    padding: 6rem 4rem;
-  }
-}
-
-.hero-content {
-  max-width: 800px;
-  margin: 0 auto;
-
-  .lab-logo {
-    display: block;
-    margin: 0 auto 1.5rem auto;
-    max-width: 200px;
-    height: auto;
-    border-radius: 8px;
-  }
-
-  h1 {
-    color: white;
-    font-size: 2.2rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-    line-height: 1.2;
-
-    @media (min-width: 768px) {
-      font-size: 2.8rem;
-    }
-  }
-
-  p {
-    font-size: 1.15rem;
-    opacity: 0.95;
-    margin-bottom: 2rem;
-
-    @media (min-width: 768px) {
-      font-size: 1.25rem;
-    }
-  }
-}
-
-.hero-buttons {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  flex-wrap: wrap;
-  
-  a {
-    padding: 0.75rem 1.5rem;
-    border-radius: 5px;
-    font-weight: 600;
-    text-decoration: none;
-    transition: all 0.3s ease;
-  }
-  
-  .btn-primary {
-    background: white;
-    color: $primary;
-    
-    &:hover {
-      background: $light-bg;
-      transform: translateY(-2px);
-    }
-  }
-  
-  .btn-secondary {
-    background: transparent;
-    color: white;
-    border: 2px solid white;
-    
-    &:hover {
-      background: rgba(255,255,255,0.1);
-    }
-  }
-}
-
-// ============================================
-// CONTENT SECTIONS
-// ============================================
-
-.content-section {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 2rem 1rem;
-}
-
-// Impact grid on homepage
-.impact-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
-  margin: 2rem 0;
-}
-
-.impact-card {
-  background: $light-bg;
-  padding: 1.5rem;
-  border-radius: 8px;
-  border-left: 4px solid $primary;
-  
-  h3 {
-    color: $primary;
-    font-size: 1.1rem;
-    margin-top: 0;
-    margin-bottom: 0.5rem;
-  }
-  
-  p {
-    margin-bottom: 0;
-    font-size: 0.95rem;
-  }
-}
-
-// Funding logos
-.funding-logos {
-  display: flex;
-  gap: 2rem;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  margin: 1.5rem 0;
-  padding: 1rem;
-  background: $light-bg;
-  border-radius: 8px;
-  
-  img {
-    max-height: 60px;
-    opacity: 0.85;
-    transition: opacity 0.3s ease;
-    
-    &:hover {
-      opacity: 1;
-    }
-  }
-}
-
-// News list
-.news-list {
-  background: $light-bg;
-  padding: 1.5rem;
-  border-radius: 8px;
-  
-  ul {
-    margin-bottom: 0;
-  }
-  
-  li {
-    margin-bottom: 0.75rem;
-    padding-left: 0.5rem;
-    
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-}
-
-// Publication highlight
-.publication-highlight {
-  background: $light-bg;
-  padding: 1.5rem;
-  border-radius: 8px;
-  font-size: 0.95rem;
-  
-  p {
-    margin-bottom: 1rem;
-    
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-}
-
-// CTA section
-.cta-section {
-  background: linear-gradient(135deg, $primary 0%, darken($primary, 10%) 100%);
-  color: white;
-  padding: 3rem 2rem;
-  margin: 3rem -1rem -1rem -1rem;
-  text-align: center;
-}
-
-.cta-content {
-  max-width: 600px;
-  margin: 0 auto;
-  
-  h3 {
-    color: white;
-    margin-top: 0;
-  }
-  
-  .btn-cta {
-    display: inline-block;
-    background: white;
-    color: $primary;
-    padding: 0.75rem 2rem;
-    border-radius: 5px;
-    font-weight: 600;
-    margin-top: 1rem;
-    transition: all 0.3s ease;
-    
-    &:hover {
-      background: $light-bg;
-      transform: translateY(-2px);
-      text-decoration: none;
-    }
-  }
-}
-
-// ============================================
-// RESEARCH PAGE - PROGRAM CARDS
-// ============================================
-
-.program-card {
-  background: white;
-  border: 1px solid #e0e0e0;
-  border-radius: 8px;
-  padding: 2rem;
-  margin: 1.5rem 0;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-  
-  h3 {
-    color: $primary;
-    border-bottom: 2px solid $primary;
-    padding-bottom: 0.5rem;
-  }
-  
-  h4 {
-    color: $text-primary;
-    font-size: 1rem;
-  }
-}
-
-// ============================================
-// TEAM PAGE - MEMBER CARDS
-// ============================================
-
-.team-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  gap: 2rem;
-  margin: 2rem 0;
-}
-
-.member-card {
-  display: flex;
-  gap: 1.5rem;
-  background: white;
-  border: 1px solid #e0e0e0;
-  border-radius: 8px;
-  padding: 1.5rem;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-  
-  @media (max-width: 500px) {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-}
-
-.member-photo-container {
-  flex-shrink: 0;
-}
-
-.member-photo {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid $primary;
-  
-  &.placeholder {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: $light-bg;
-    color: $text-secondary;
-    font-size: 3rem;
-  }
-}
-
-.member-info {
-  flex: 1;
-  
-  .member-name {
-    color: $primary;
-    font-size: 1.2rem;
-    margin: 0 0 0.25rem 0;
-  }
-  
-  .member-title {
-    color: $text-secondary;
-    font-size: 0.9rem;
-    margin: 0 0 0.5rem 0;
-  }
-  
-  .research-focus {
-    font-size: 0.9rem;
-    margin: 0.5rem 0;
-  }
-  
-  .expected-grad {
-    font-size: 0.85rem;
-    color: $text-secondary;
-  }
-  
-  .member-bio {
-    font-size: 0.9rem;
-    line-height: 1.5;
-    margin: 0.75rem 0;
-  }
-  
-  .member-education {
-    font-size: 0.85rem;
-    margin-top: 0.75rem;
-    
-    ul {
-      margin: 0.25rem 0 0 0;
-      padding-left: 1.2rem;
-    }
-    
-    li {
-      margin-bottom: 0.25rem;
-    }
-  }
-}
-
-.member-social {
-  display: flex;
-  gap: 0.75rem;
-  margin-top: 0.75rem;
-  
-  a {
-    color: $text-secondary;
-    font-size: 1.1rem;
-    transition: color 0.2s ease;
-    
-    &:hover {
-      color: $primary;
-    }
-  }
-}
-
-// Alumni grid
-.alumni-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 1rem;
-  margin: 1.5rem 0;
-}
-
-.alumni-card {
-  display: flex;
-  gap: 1rem;
-  align-items: flex-start;
-  padding: 1rem;
-  background: $light-bg;
-  border-radius: 6px;
-  
-  .alumni-photo {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    object-fit: cover;
-    flex-shrink: 0;
-    
-    &.placeholder {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: #ddd;
-      color: $text-secondary;
-      font-size: 1.5rem;
-    }
-  }
-  
-  .alumni-info {
-    font-size: 0.9rem;
-    
-    .thesis {
-      font-size: 0.85rem;
-      margin: 0.25rem 0;
-    }
-    
-    .current-position {
-      font-size: 0.85rem;
-      margin: 0.25rem 0 0 0;
-    }
-  }
-}
-
-// Lab photos gallery
-.lab-gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1rem;
-  margin: 1.5rem 0;
-  
-  img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-    
-    &:hover {
-      transform: scale(1.02);
-    }
-  }
-}
-
-// ============================================
-// JOIN PAGE - POSITION CARDS
-// ============================================
-
-.why-join-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.5rem;
-  margin: 2rem 0;
-}
-
-.why-card {
-  background: $light-bg;
-  padding: 1.5rem;
-  border-radius: 8px;
-  text-align: center;
-  
-  h3 {
-    color: $primary;
-    font-size: 1rem;
-    margin-top: 0;
-  }
-}
-
-.position-card {
-  background: white;
-  border: 1px solid #e0e0e0;
-  border-left: 4px solid $primary;
-  border-radius: 8px;
-  padding: 1.5rem 2rem;
-  margin: 1.5rem 0;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-}
-
-.apply-steps {
-  background: $light-bg;
-  padding: 2rem;
-  border-radius: 8px;
-  margin: 2rem 0;
-}
-
-// ============================================
-// CV PAGE
-// ============================================
-
-.cv-header {
-  text-align: center;
-  padding-bottom: 1.5rem;
-  border-bottom: 2px solid $primary;
-  margin-bottom: 2rem;
-  
-  h1 {
-    margin-bottom: 0.5rem;
-  }
-}
-
-.cv-download {
-  text-align: center;
-  margin: 2rem 0;
-  
-  .btn-download {
-    display: inline-block;
-    background: $primary;
-    color: white;
-    padding: 0.75rem 1.5rem;
-    border-radius: 5px;
-    font-weight: 600;
-    transition: all 0.3s ease;
-    
-    &:hover {
-      background: darken($primary, 10%);
-      text-decoration: none;
-      transform: translateY(-2px);
-    }
-  }
-}
-
-// ============================================
-// PUBLICATIONS PAGE
-// ============================================
-
-.pub-stats {
-  text-align: center;
-  font-size: 1.1rem;
-  margin: 1.5rem 0;
-  padding: 1rem;
-  background: $light-bg;
-  border-radius: 8px;
-}
-
-.btn-scholar, .btn-orcid {
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  font-size: 0.9rem;
-  margin: 0.25rem;
-}
-
-.btn-scholar {
-  background: #4285f4;
-  color: white;
-  
-  &:hover {
-    background: darken(#4285f4, 10%);
-    color: white;
-    text-decoration: none;
-  }
-}
-
-.btn-orcid {
-  background: #a6ce39;
-  color: white;
-  
-  &:hover {
-    background: darken(#a6ce39, 10%);
-    color: white;
-    text-decoration: none;
-  }
-}
-
-// ============================================
-// TEACHING PAGE - COURSE CARDS
-// ============================================
-
-.course-card {
-  background: white;
-  border: 1px solid #e0e0e0;
-  border-radius: 8px;
-  padding: 1.5rem 2rem;
-  margin: 1.5rem 0;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-}
-
-.alumni-outcomes {
-  background: $light-bg;
-  padding: 1.5rem 2rem;
-  border-radius: 8px;
-  margin: 1.5rem 0;
-}
-
-// ============================================
-// TABLES
-// ============================================
-
-table {
-  width: 100%;
-  margin: 1.5rem 0;
-  border-collapse: collapse;
-  
-  th {
-    background: $primary;
-    color: white;
-    padding: 0.75rem 1rem;
-    text-align: left;
-    font-weight: 600;
-  }
-  
-  td {
-    padding: 0.75rem 1rem;
-    border-bottom: 1px solid #e0e0e0;
-  }
-  
-  tr:hover td {
-    background: $light-bg;
-  }
-}
-
-// ============================================
-// CALLOUTS
-// ============================================
-
-.callout {
-  border-radius: 8px;
-  
-  &.callout-note {
-    border-left-color: $primary;
-    
-    .callout-title {
-      color: $primary;
-    }
-  }
-  
-  &.callout-tip {
-    border-left-color: $accent;
-  }
-}
-
-// ============================================
-// NAVBAR CUSTOMIZATION
-// ============================================
+/* ==== Navbar ======================================================= */
 
 .navbar {
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  
-  .navbar-brand {
+  background: $maroon;
+  border-bottom: 3px solid $gold;
+  box-shadow: none;
+  padding-top: .65rem;
+  padding-bottom: .65rem;
+
+  .navbar-brand { color: #fff; }
+  .navbar-title {
+    font-family: "Fraunces", Georgia, serif;
     font-weight: 600;
+    font-size: 1.25rem;
+    color: #fff;
   }
-  
-  .nav-link {
-    font-weight: 500;
-    transition: opacity 0.2s ease;
-    
-    &:hover {
-      opacity: 0.85;
-    }
+  img.navbar-logo { max-height: 46px; height: 46px; width: auto; }
+
+  .navbar-nav .nav-link {
+    font-family: "Archivo", $font-family-sans-serif;
+    font-size: .8rem;
+    font-weight: 600;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, .88);
+    padding-left: .8rem;
+    padding-right: .8rem;
+    border-bottom: 2px solid transparent;
+
+    &:hover, &:focus-visible { color: $gold; }
+    &.active { color: #fff; border-bottom-color: $gold; }
+  }
+  .navbar-toggler { color: #fff; border-color: rgba(255, 255, 255, .35); }
+  .quarto-navbar-tools .quarto-navigation-tool { color: rgba(255, 255, 255, .88);
+    &:hover { color: $gold; } }
+  #quarto-search .aa-DetachedSearchButton { color: rgba(255, 255, 255, .88); }
+}
+.navbar.scrolled { box-shadow: 0 3px 16px rgba(38, 8, 8, .35); }
+
+/* ==== Buttons ====================================================== */
+
+.btn-maroon, .btn-ghost {
+  display: inline-block;
+  font-family: "Archivo", $font-family-sans-serif;
+  font-size: .85rem;
+  font-weight: 600;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: .45rem;
+  padding: .8rem 1.6rem;
+  transition: transform .25s ease, box-shadow .25s ease, background-color .25s ease;
+}
+.btn-maroon {
+  background: $maroon; color: #fff; border: 2px solid $maroon;
+  &:hover, &:focus-visible {
+    background: $maroon-deep; border-color: $maroon-deep; color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 22px rgba(102, 0, 0, .28);
+  }
+}
+.btn-ghost {
+  background: transparent; color: $maroon; border: 2px solid $maroon;
+  &:hover, &:focus-visible {
+    background: $maroon; color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 22px rgba(102, 0, 0, .22);
+  }
+}
+.band-dark .btn-ghost, .band-maroon .btn-ghost, .hero-home .btn-ghost {
+  color: #fff; border-color: #fff;
+  &:hover, &:focus-visible { background: #fff; color: $maroon; }
+}
+.band-dark .btn-maroon, .band-maroon .btn-maroon, .hero-home .btn-maroon {
+  background: $gold; border-color: $gold; color: $band-dark;
+  &:hover, &:focus-visible { background: lighten($gold, 8%); border-color: lighten($gold, 8%); color: $band-dark; }
+}
+
+/* ==== Band system (full-width homepage sections) =================== */
+
+.band {
+  padding: 5.5rem 1.5rem;
+  @media (max-width: 767px) { padding: 3.5rem 1.25rem; }
+}
+.band-inner { max-width: 1150px; margin: 0 auto; }
+.band-paper  { background: $paper; }
+.band-stone  { background: $stone; }
+.band-dark {
+  background: $band-dark; color: #efe8e0;
+  h2, h3, h4 { color: #fff; }
+  .accent-word, .eyebrow { color: $gold; }
+  a:not(.btn-maroon):not(.btn-ghost) { color: $gold; }
+}
+.band-maroon {
+  background: linear-gradient(135deg, $maroon 0%, $maroon-deep 100%);
+  color: #f6ecec;
+  h2, h3 { color: #fff; }
+  .accent-word, .eyebrow { color: $gold; }
+  a:not(.btn-maroon):not(.btn-ghost) { color: $gold; }
+}
+
+.band h2 {
+  font-size: clamp(1.7rem, 3.5vw, 2.4rem);
+  margin-bottom: 1rem;
+}
+.band-center { text-align: center; }
+.band-center p { max-width: 46rem; margin-left: auto; margin-right: auto; }
+
+/* ==== Homepage hero (split: copy panel + unobscured photo) ========= */
+
+.hero-home {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+  min-height: min(80vh, 700px);
+  background: linear-gradient(120deg, #3d0a0a 0%, $maroon 55%, #7a1414 100%);
+  @media (max-width: 900px) { grid-template-columns: 1fr; }
+}
+.hero-home .hero-copy-panel {
+  display: flex;
+  align-items: center;
+  padding: 4.5rem clamp(1.5rem, 4vw, 4rem);
+  @media (min-width: 1400px) { padding-left: calc((100vw - 1320px) / 2); }
+}
+.hero-home .hero-copy { max-width: 40rem; }
+.hero-home h1 {
+  font-size: clamp(2.1rem, 4.4vw, 3.2rem);
+  line-height: 1.15;
+  color: #fff;
+  margin-bottom: 1.2rem;
+  .accent-word { color: $gold; }
+}
+.hero-home .hero-lede {
+  font-size: 1.18rem; line-height: 1.6; color: #f2e9e4;
+  max-width: 36rem; margin-bottom: 2rem;
+}
+.hero-home .eyebrow { color: $gold; }
+.hero-home .hero-photo {
+  position: relative;
+  min-height: 340px;
+  border-left: 6px solid $gold;
+  @media (max-width: 900px) { border-left: none; border-top: 6px solid $gold; }
+  p, img { position: absolute; inset: 0; width: 100%; height: 100%; margin: 0; }
+  img { object-fit: cover; object-position: center 32%; }
+}
+.hero-buttons { display: flex; flex-wrap: wrap; gap: .9rem; }
+
+/* ==== Cards ======================================================== */
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.4rem;
+  margin-top: 2.2rem;
+}
+.zl-card {
+  background: #fff;
+  border: 1px solid $line;
+  border-radius: .7rem;
+  padding: 1.7rem 1.6rem;
+  transition: transform .3s ease, box-shadow .3s ease;
+  h3 { font-size: 1.15rem; margin: .9rem 0 .5rem; }
+  p { font-size: .97rem; color: $ink-soft; margin: 0; }
+}
+.zl-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 34px rgba(38, 33, 30, .13);
+}
+.icon-badge {
+  width: 52px; height: 52px;
+  display: inline-flex; align-items: center; justify-content: center;
+  background: $maroon; color: $gold;
+  border-radius: 50%;
+  font-size: 1.35rem;
+}
+.icon-row { display: block; margin-bottom: .3rem; }
+.band-dark .zl-card {
+  background: rgba(255, 255, 255, .05);
+  border-color: rgba(255, 255, 255, .14);
+  p { color: #cfc5bc; }
+}
+
+/* ==== Media coverage strip ========================================= */
+
+.media-strip {
+  display: flex; flex-wrap: wrap; justify-content: center;
+  gap: .8rem; margin-top: 2rem;
+}
+.media-strip a {
+  display: inline-block;
+  font-family: "Archivo", $font-family-sans-serif;
+  font-size: .8rem; font-weight: 600;
+  letter-spacing: .1em; text-transform: uppercase;
+  color: $maroon-deep; text-decoration: none;
+  background: #fff; border: 1px solid $line; border-radius: 999px;
+  padding: .55rem 1.15rem;
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+  span { color: $ink-soft; font-weight: 500; letter-spacing: .04em; text-transform: none; }
+  &:hover, &:focus-visible {
+    transform: translateY(-3px);
+    border-color: $gold;
+    box-shadow: 0 8px 18px rgba(38, 33, 30, .12);
   }
 }
 
-// ============================================
-// FOOTER
-// ============================================
+/* ==== Stats band =================================================== */
 
-.footer {
-  font-size: 0.9rem;
-  
+.stat-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 2rem; text-align: center; margin-top: 2.4rem;
+}
+.stat .stat-number {
+  display: block;
+  font-family: "Fraunces", Georgia, serif;
+  font-size: clamp(2.4rem, 5vw, 3.4rem);
+  font-weight: 600; color: $gold; line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+.stat .stat-label {
+  display: block;
+  font-family: "Archivo", $font-family-sans-serif;
+  font-size: .78rem; font-weight: 600;
+  letter-spacing: .14em; text-transform: uppercase;
+  color: #cfc5bc; margin-top: .6rem;
+}
+.strip-cta { margin-top: 2rem; }
+.funding-note { margin-top: 2.5rem; }
+.buttons-center { justify-content: center; margin-top: 1.6rem; }
+
+/* ==== People ======================================================= */
+
+.pi-feature {
+  display: grid; grid-template-columns: 260px 1fr; gap: 2.5rem;
+  align-items: start;
+  background: #fff; border: 1px solid $line; border-radius: .9rem;
+  padding: 2.2rem;
+  margin: 1.5rem 0 2.5rem;
+  @media (max-width: 700px) { grid-template-columns: 1fr; }
+  img {
+    width: 100%; border-radius: .7rem;
+    border: 3px solid $stone;
+  }
+  h3 { margin-top: 0; }
+}
+
+.people-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(215px, 1fr));
+  gap: 1.5rem;
+  margin: 1.6rem 0 2.6rem;
+  list-style: none; padding: 0;
+}
+.person-card {
+  background: #fff; border: 1px solid $line; border-radius: .8rem;
+  padding: 1.6rem 1.2rem; text-align: center;
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+.person-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 30px rgba(38, 33, 30, .12);
+}
+.person-photo {
+  width: 132px; height: 132px; object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid $gold;
+  margin-bottom: 1rem;
+}
+.person-photo-placeholder {
+  width: 132px; height: 132px; border-radius: 50%;
+  background: $stone; color: $maroon;
+  display: flex; align-items: center; justify-content: center;
+  font-family: "Fraunces", Georgia, serif; font-size: 2.2rem; font-weight: 600;
+  margin: 0 auto 1rem;
+  border: 3px solid $line;
+}
+.person-card h3 {
+  font-size: 1.05rem; margin: 0 0 .25rem;
+}
+.person-role {
+  font-family: "Archivo", $font-family-sans-serif;
+  font-size: .72rem; font-weight: 600;
+  letter-spacing: .1em; text-transform: uppercase;
+  color: $maroon; margin-bottom: .55rem;
+}
+.person-blurb { font-size: .9rem; color: $ink-soft; margin-bottom: .6rem; }
+.person-award { font-size: .82rem; color: $ink-soft; margin-bottom: .6rem;
+  .bi { color: $gold-ink; margin-right: .25rem; } }
+.person-links a {
+  color: $maroon; font-size: 1.05rem; margin: 0 .3rem; text-decoration: none;
+  &:hover { color: $gold-ink; }
+}
+
+/* Alumni: compact text rows */
+.alumni-list {
+  list-style: none; padding: 0; margin: 1rem 0 2rem;
+  li {
+    padding: .8rem 0; border-bottom: 1px solid $line; margin: 0;
+    strong { color: $maroon-deep; }
+    .alum-now { color: $ink-soft; }
+    em { color: $ink-soft; }
+  }
+  li:last-child { border-bottom: none; }
+}
+
+.gallery-duo {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem;
+  margin: 1.8rem 0;
+  @media (max-width: 700px) { grid-template-columns: 1fr; }
+  figure { margin: 0; }
+  img { width: 100%; border-radius: .8rem; border: 1px solid $line; }
+  figcaption {
+    font-size: .85rem; color: $ink-soft; margin-top: .5rem; text-align: center;
+  }
+}
+
+/* ==== Publications ================================================= */
+
+.pub-stats {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 1.2rem 2.2rem;
+  background: $band-dark; color: #efe8e0;
+  border-radius: .9rem; padding: 1.6rem 2rem; margin: 1.4rem 0 2.4rem;
+  .pub-count {
+    font-family: "Fraunces", Georgia, serif;
+    font-size: 2.6rem; font-weight: 600; color: $gold; line-height: 1;
+  }
+  .pub-count-label {
+    font-family: "Archivo", $font-family-sans-serif;
+    font-size: .74rem; font-weight: 600; letter-spacing: .13em;
+    text-transform: uppercase; color: #cfc5bc;
+  }
+  a { color: $gold; }
+}
+
+.pubs-page {
+  ol li { margin: .85rem 0; }
+}
+
+/* ==== Research page program cards ================================== */
+
+.program-card {
+  background: #fff; border: 1px solid $line; border-left: 5px solid $maroon;
+  border-radius: .7rem;
+  padding: 1.8rem 2rem;
+  margin: 1.8rem 0;
+  box-shadow: 0 2px 10px rgba(38, 33, 30, .05);
+  h2, h3 { margin-top: 0; }
+}
+
+/* ==== Legacy content classes (teaching / join), restyled =========== */
+
+.why-join-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.3rem; margin: 1.6rem 0;
+}
+.why-card, .course-card {
+  background: #fff; border: 1px solid $line; border-radius: .7rem;
+  padding: 1.5rem 1.5rem;
+  h3, h4 { margin-top: 0; font-size: 1.08rem; }
+}
+.course-card { border-top: 4px solid $maroon; margin: 1.4rem 0; }
+.apply-steps {
+  background: $stone; border-radius: .8rem; padding: 1.6rem 2rem; margin: 1.6rem 0;
+  ol { margin-bottom: 0; }
+}
+.alumni-outcomes {
+  background: #fff; border: 1px solid $line; border-radius: .7rem;
+  padding: 1.4rem 1.8rem; margin: 1.4rem 0;
+}
+
+/* ==== News listing cards =========================================== */
+
+div.quarto-post {
+  background: #fff; border: 1px solid $line; border-radius: .8rem;
+  padding: 1.2rem 1.4rem; margin-bottom: 1.2rem;
+  transition: transform .25s ease, box-shadow .25s ease;
+  &:hover { transform: translateY(-3px); box-shadow: 0 12px 26px rgba(38,33,30,.1); }
+  .listing-title { font-family: "Fraunces", Georgia, serif; font-size: 1.15rem; }
+  .listing-date {
+    font-family: "Archivo", $font-family-sans-serif;
+    font-size: .74rem; letter-spacing: .1em; text-transform: uppercase;
+    color: $gold-ink;
+  }
+  img { border-radius: .5rem; }
+}
+.quarto-categories .quarto-category {
+  background: $stone; border-color: $line; color: $maroon-deep;
+}
+
+/* Homepage news strip (grid listing) */
+.news-strip .quarto-grid-item {
+  background: #fff; border: 1px solid $line; border-radius: .8rem;
+  transition: transform .25s ease, box-shadow .25s ease;
+  &:hover { transform: translateY(-4px); box-shadow: 0 14px 28px rgba(38,33,30,.12); }
+  .listing-title { font-family: "Fraunces", Georgia, serif; font-size: 1.05rem; }
+  .card-img-top { border-radius: .8rem .8rem 0 0; }
+}
+
+/* ==== Footer ======================================================= */
+
+.zl-footer {
+  background: $band-dark;
+  border-top: 4px solid $gold;
+  color: #cfc5bc;
+  padding: 4rem 1.5rem 2rem;
+  margin-top: 4.5rem;
+  font-size: .95rem;
+
+  .zl-footer-inner {
+    max-width: 1150px; margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1.4fr;
+    gap: 2.5rem;
+    @media (max-width: 820px) { grid-template-columns: 1fr; gap: 2rem; }
+  }
+  h2 {
+    font-family: "Fraunces", Georgia, serif;
+    font-size: 1.35rem; color: #fff; margin: 0 0 .9rem;
+  }
+  .zl-footer-heading {
+    font-family: "Archivo", "Source Sans 3", sans-serif;
+    font-size: .76rem; font-weight: 600;
+    letter-spacing: .14em; text-transform: uppercase;
+    color: $gold; margin: 0 0 .9rem;
+  }
+  p { margin: .3rem 0; }
+  ul { list-style: none; margin: 0; padding: 0; }
+  li { margin: .45rem 0; }
   a {
-    color: rgba(255,255,255,0.8);
-    
-    &:hover {
-      color: white;
+    color: #e8e0d8; text-decoration: none;
+    transition: color .2s ease, padding-left .25s ease;
+    &:hover, &:focus-visible { color: $gold; padding-left: 6px; }
+  }
+  .zl-footer-bottom {
+    max-width: 1150px; margin: 3rem auto 0;
+    border-top: 1px solid rgba(255, 255, 255, .12);
+    padding-top: 1.4rem;
+    display: flex; flex-wrap: wrap; justify-content: space-between; gap: .8rem;
+    font-size: .84rem; color: #a3988e;
+    a { color: #a3988e; &:hover { color: $gold; padding-left: 0; } }
+  }
+}
+/* Hide Quarto's built-in footer chrome; the injected .zl-footer replaces it */
+.nav-footer { display: none; }
+
+/* ==== Scroll reveal ================================================ */
+
+.reveal-up {
+  opacity: 0;
+  transform: translateY(26px);
+  transition: opacity .65s ease, transform .65s ease;
+}
+.reveal-up.in-view { opacity: 1; transform: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal-up { opacity: 1; transform: none; transition: none; }
+  .zl-card, .person-card, .btn-maroon, .btn-ghost, .media-strip a,
+  div.quarto-post, .news-strip .quarto-grid-item {
+    transition: none;
+    &:hover { transform: none; }
+  }
+  html { scroll-behavior: auto; }
+}
+
+/* ==== Content pages: shared polish ================================= */
+
+#quarto-content main.content { padding-top: 1.2rem; }
+
+/* Unified title block on every standard page: Fraunces title over a gold
+   rule, styled subtitle, and consistent uppercase meta (author / date /
+   categories) so no page header ever reads as an afterthought. */
+#title-block-header.quarto-title-block {
+  margin-bottom: 2.2rem;
+  padding-bottom: 1.6rem;
+  border-bottom: 1px solid $line;
+
+  .title {
+    font-size: clamp(2rem, 4vw, 2.7rem);
+    margin-bottom: 0;
+    &::after {
+      content: "";
+      display: block;
+      width: 64px; height: 4px;
+      background: $gold;
+      margin-top: .9rem;
     }
   }
+  .subtitle {
+    font-size: 1.15rem;
+    color: $ink-soft;
+    margin: .9rem 0 0;
+    font-family: $font-family-sans-serif;
+  }
+  .quarto-title-meta { margin-top: 1.3rem; column-gap: 2.2rem; }
+  .quarto-title-meta-heading {
+    font-family: "Archivo", $font-family-sans-serif;
+    font-size: .7rem;
+    font-weight: 600;
+    letter-spacing: .13em;
+    text-transform: uppercase;
+    color: $gold-ink;
+    margin-bottom: .15rem;
+    opacity: 1;
+  }
+  .quarto-title-meta-contents, .quarto-title-meta-contents p {
+    font-size: .95rem;
+    color: $ink;
+    margin: 0;
+  }
+  .quarto-title .quarto-categories { margin-top: .9rem; }
 }
 
-// ============================================
-// RESPONSIVE ADJUSTMENTS
-// ============================================
+/* One heading treatment sitewide: section h2s carry a maroon rail.
+   (Homepage bands opt out — their h2s are display headings.) */
+main.content h2 {
+  font-size: 1.55rem;
+  border-left: 5px solid $maroon;
+  border-bottom: none;
+  padding-left: .9rem;
+  padding-bottom: 0;
+  margin-top: 2.6rem;
+}
+main.content .band h2,
+main.content .quarto-title h1 {
+  border-left: none;
+  padding-left: 0;
+}
+main.content h3 { font-size: 1.2rem; }
 
-@media (max-width: 768px) {
-  .hero-banner {
-    padding: 3rem 1rem;
-  }
-  
-  .hero-content h1 {
-    font-size: 1.8rem;
-  }
-  
-  .impact-grid,
-  .team-grid,
-  .why-join-grid {
-    grid-template-columns: 1fr;
-  }
-  
-  table {
-    display: block;
-    overflow-x: auto;
-  }
+/* Compact button variant (PI links, inline actions) */
+.btn-maroon.btn-sm, .btn-ghost.btn-sm {
+  padding: .45rem .95rem;
+  font-size: .72rem;
+  border-width: 1.5px;
 }
 
-// ============================================
-// PRINT STYLES
-// ============================================
+/* Reusable inline CTA band (rounded, used mid-page) */
+.cta-inline {
+  border-radius: .9rem;
+  margin: 3rem 0 1rem;
+  padding: 3rem 2rem;
+}
 
+table.table thead th, table thead th {
+  background: $maroon; color: #fff;
+  font-family: "Archivo", $font-family-sans-serif;
+  font-size: .78rem; letter-spacing: .08em; text-transform: uppercase;
+  font-weight: 600;
+}
+
+.callout-tip { border-left-color: $gold !important; }
+
+#TOC, nav[role="doc-toc"] {
+  .nav-link.active { color: $maroon; font-weight: 600; }
+}
+
+a:focus-visible {
+  outline: 2px solid $gold-ink; outline-offset: 2px; border-radius: 2px;
+}
+
+/* Print */
 @media print {
-  .navbar,
-  .footer,
-  .hero-buttons,
-  .btn-download {
-    display: none !important;
-  }
-  
-  body {
-    font-size: 11pt;
-  }
-  
-  a {
-    color: black;
-    text-decoration: none;
-  }
-  
-  .hero-banner {
-    background: none;
-    color: black;
-    padding: 1rem 0;
-  }
+  .navbar, .zl-footer, #TOC { display: none; }
+  body { background: #fff; }
 }

@@ -1,0 +1,18 @@
+- name: Sunita Shrestha
+  role: Ph.D. Student, Poultry Science
+  photo: assets/images/team/sunita-shrestha.jpg
+  blurb: >
+    Pathogen genomics and vaccine development — identifying and characterizing
+    vaccine candidates against avian pathogens using reverse vaccinology.
+  award: Best Oral Presentation (SCAD), IPSF 2026
+  email: ss4440@msstate.edu
+
+- name: Manhong Wang
+  role: Ph.D. Student, Poultry Science
+  photo: assets/images/team/manhong-wang.jpg
+  blurb: >
+    Culturomics of the poultry gut microbiome — isolating beneficial bacteria
+    and probiotic candidates that improve poultry health and reduce pathogen
+    colonization.
+  award: Certificate of Excellence in Pathology, IPSF 2026
+  email: mw2224@msstate.edu

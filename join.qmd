@@ -86,7 +86,7 @@ All new members receive:
 
 ### Work-Life Balance
 
-We believe in sustainable productivity. The lab has flexible hours, and I do not expect weekend or evening work except near deadlines. Mental health and personal well-being come first.
+We believe in sustainable productivity. The lab has flexible hours, and we do not expect weekend or evening work except near deadlines. Mental health and personal well-being come first.
 
 ---
 
@@ -109,7 +109,7 @@ We believe in sustainable productivity. The lab has flexible hours, and I do not
 
 ::: {.column width="40%"}
 
-![MSU Campus](assets/images/msu-campus.jpg){fig-alt="MSU campus photo"}
+![Zhang Lab members at our 2025 lab barbecue](assets/images/team/lab-bbq-2025.jpg){fig-alt="Zhang Lab members gathered at the 2025 lab barbecue"}
 
 :::
 
@@ -173,4 +173,4 @@ Invited candidates will interview (virtual or in-person) with Dr. Zhang and lab 
 
 ---
 
-*Questions not answered here? Email [l.zhang@msstate.edu](mailto:l.zhang@msstate.edu) — I try to respond within one week.*
+*Questions not answered here? Email [l.zhang@msstate.edu](mailto:l.zhang@msstate.edu) — we try to respond within one week.*

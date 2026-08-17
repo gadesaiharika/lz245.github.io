@@ -1,8 +1,17 @@
-.Rproj.user
-.Rhistory
-.RData
-.Ruserdata
-
 /.quarto/
+/_site/
+
+# NOTE: docs/ IS tracked — GitHub Pages serves the site from main:/docs.
+# Always run `quarto render` and commit docs/ together with your source
+# changes, or the live site will not update. See README.
+
+# OS / editor junk
+.DS_Store
+**/.DS_Store
+Thumbs.db
+
+# R project leftovers (R is not used by this site)
+.Rproj.user/
+*.Rproj
 
 **/*.quarto_ipynb

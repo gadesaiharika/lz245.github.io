@@ -1,0 +1,24 @@
+---
+title: "Culturomics study of the broiler cecal microbiome published in Poultry Science"
+date: 2026-04-01
+author: "Zhang Lab"
+description: >
+  Manhong Wang's paper maps the cultivable microbiota of broiler chicken
+  ceca and enables targeted isolation of beneficial bacteria — a foundation
+  for next-generation probiotics.
+categories: [Publications]
+---
+
+Our culturomics study, led by Ph.D. student **Manhong Wang**, is out in
+*Poultry Science*:
+
+> Wang, M., Ye, X., Hsu, C.Y., Fugate, H., Zhang, X., Adhikari, P.A., Fan, P.,
+> Elliott, K., Macklin, K., & Zhang, L. (2026). Application of culturomics to
+> explore the cultivable microbiota and enable targeted bacterial isolation
+> from the ceca of broiler chickens. *Poultry Science*, 105(4), 106527.
+> [DOI](https://doi.org/10.1016/j.psj.2026.106527)
+
+The work systematically cultures the broiler cecal microbiome — turning
+"unculturable" community members into isolates we can actually study and
+deploy. It is a key step toward identifying probiotic candidates that improve
+poultry health and reduce pathogen colonization.

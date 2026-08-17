@@ -1,0 +1,16 @@
+- name: Rita Ugoh
+  role: M.S. Student, Food Science
+  photo: assets/images/team/rita-ugoh.jpg
+  blurb: >
+    Characterizing spoilage bacteria in catfish with culturomics for the
+    Mississippi Center for Food Safety — improving quality control and
+    shelf life in catfish processing.
+  email: ru90@msstate.edu
+
+- name: Haley Nabors
+  role: M.S. Student, Poultry Science
+  photo: assets/images/team/haley-nabors.jpg
+  blurb: >
+    Antibiotic resistance and multi-drug resistance patterns in Clostridium
+    perfringens isolated from diseased chickens.
+  email: hln80@msstate.edu

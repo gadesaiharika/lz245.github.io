@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Li Zhang | Agricultural Microbiomes &amp; Food Safety Research – Li Zhang | Agricultural Microbiomes &amp; Food Safety</title>
+<title>People – Zhang Lab | Agricultural Microbiomes &amp; Food Safety</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -30,13 +30,14 @@ ul.task-list li input[type="checkbox"] {
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./assets/images/favicon.ico" rel="icon">
+<link href="./assets/images/favicon.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -46,7 +47,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-bb62276ab45c84d9efd712f51ff97b5a.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-84adf3b116c63eb49fb57c96cf9eb927.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-63cec9460566c54ae3458648a0b669e0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -73,10 +74,176 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-faculty-grid .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-name','listing-role','listing-photo','listing-blurb','listing-email','listing-scholar','listing-profile',{ data: ['index'] },{ data: ['categories'] }],
+      
+      searchColumns: ["listing-name","listing-role","listing-photo","listing-blurb","listing-email","listing-scholar","listing-profile"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-faculty-grid'] = new List('listing-faculty-grid', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-staff-grid .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-name','listing-role','listing-photo','listing-email',{ data: ['index'] },{ data: ['categories'] }],
+      
+      searchColumns: ["listing-name","listing-role","listing-photo","listing-email"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-staff-grid'] = new List('listing-staff-grid', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-postdocs-grid .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-name','listing-role','listing-photo','listing-blurb','listing-email',{ data: ['index'] },{ data: ['categories'] }],
+      
+      searchColumns: ["listing-name","listing-role","listing-photo","listing-blurb","listing-email"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-postdocs-grid'] = new List('listing-postdocs-grid', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-phd-grid .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-name','listing-role','listing-photo','listing-blurb','listing-award','listing-email',{ data: ['index'] },{ data: ['categories'] }],
+      
+      searchColumns: ["listing-name","listing-role","listing-photo","listing-blurb","listing-award","listing-email"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-phd-grid'] = new List('listing-phd-grid', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-ms-grid .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-name','listing-role','listing-photo','listing-blurb','listing-email',{ data: ['index'] },{ data: ['categories'] }],
+      
+      searchColumns: ["listing-name","listing-role","listing-photo","listing-blurb","listing-email"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-ms-grid'] = new List('listing-ms-grid', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-undergrad-grid .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-name','listing-role','listing-blurb',{ data: ['index'] },{ data: ['categories'] }],
+      
+      searchColumns: ["listing-name","listing-role","listing-blurb"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-undergrad-grid'] = new List('listing-undergrad-grid', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
 <style>html{ scroll-behavior: smooth; }</style>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&amp;family=Source+Serif+Pro:wght@400;600&amp;display=swap" rel="stylesheet">
 <meta name="robots" content="index, follow">
 <meta name="keywords" content="agricultural microbiomes, food safety, microbial genomics, bioinformatics, whole-genome sequencing, WGS, biofilms, foodborne pathogens, Salmonella, Campylobacter, E. coli, nanopore sequencing, LAMP assay, molecular detection">
 <!-- Google tag (gtag.js) -->
@@ -88,17 +255,45 @@ ul.task-list li input[type="checkbox"] {
   gtag('config', 'G-3B7N686V5Q');
 </script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="styles/custom.css">
-<meta property="og:title" content="Li Zhang | Agricultural Microbiomes &amp; Food Safety Research">
-<meta property="og:image" content="https://lz245.github.io/assets/images/team/li-zhang.jpg">
-<meta property="og:site_name" content="Li Zhang | Agricultural Microbiomes &amp; Food Safety">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<meta property="og:title" content="People – Zhang Lab | Agricultural Microbiomes &amp; Food Safety">
+<meta property="og:description" content="The people behind the science — researchers, students, and alumni of the Zhang Lab">
+<meta property="og:image" content="https://lz245.github.io/assets/images/team/lab-psa-2025.jpg">
+<meta property="og:site_name" content="Zhang Lab | Agricultural Microbiomes &amp; Food Safety">
 <meta property="og:locale" content="en_US">
-<meta property="og:image:alt" content="Dr. Li Zhang">
-<meta name="twitter:title" content="Li Zhang | Agricultural Microbiomes &amp; Food Safety Research">
-<meta name="twitter:image" content="https://lz245.github.io/assets/images/team/li-zhang.jpg">
+<meta name="twitter:title" content="People – Zhang Lab | Agricultural Microbiomes &amp; Food Safety">
+<meta name="twitter:description" content="The people behind the science — researchers, students, and alumni of the Zhang Lab">
+<meta name="twitter:image" content="https://lz245.github.io/assets/images/team/lab-psa-2025.jpg">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image:alt" content="Dr. Li Zhang">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -179,36 +374,22 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On This Page</h2>
-   
-  <ul class="collapse">
-  <li><a href="#principal-investigator" id="toc-principal-investigator" class="nav-link active" data-scroll-target="#principal-investigator">Principal Investigator</a></li>
-  <li><a href="#research-faculty" id="toc-research-faculty" class="nav-link" data-scroll-target="#research-faculty">Research Faculty</a></li>
-  <li><a href="#research-technician" id="toc-research-technician" class="nav-link" data-scroll-target="#research-technician">Research Technician</a></li>
-  <li><a href="#postdoctoral-researchers" id="toc-postdoctoral-researchers" class="nav-link" data-scroll-target="#postdoctoral-researchers">Postdoctoral Researchers</a></li>
-  <li><a href="#ph.d.-students" id="toc-ph.d.-students" class="nav-link" data-scroll-target="#ph.d.-students">Ph.D.&nbsp;Students</a></li>
-  <li><a href="#m.s.-students" id="toc-m.s.-students" class="nav-link" data-scroll-target="#m.s.-students">M.S. Students</a></li>
-  <li><a href="#undergraduate-researchers" id="toc-undergraduate-researchers" class="nav-link" data-scroll-target="#undergraduate-researchers">Undergraduate Researchers</a></li>
-  <li><a href="#former-lab-members" id="toc-former-lab-members" class="nav-link" data-scroll-target="#former-lab-members">Former Lab Members</a></li>
-  </ul>
-</nav>
-    </div>
+    
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-page" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">People</h1>
+<p class="subtitle lead">The people behind the science — researchers, students, and alumni of the Zhang Lab</p>
 </div>
 
 
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page">
 
     
   
@@ -222,450 +403,308 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="principal-investigator" class="level2">
 <h2 class="anchored" data-anchor-id="principal-investigator">Principal Investigator</h2>
-<div class="person-entry">
-<div class="columns">
-<div class="column" style="width:30%;">
-<p><img src="assets/images/team/li-zhang.jpg" class="img-fluid" alt="Dr. Li Zhang"></p>
-</div><div class="column" style="width:70%;">
-<section id="li-zhang" class="level3">
-<h3 class="anchored" data-anchor-id="li-zhang">Li Zhang</h3>
-<p>Ph.D.&nbsp;in Nutrition, Mississippi State University, 2017</p>
-<p>Ph.D.&nbsp;in Agriculture Biological Environmental &amp; Energy Engineering, Jilin University, China, 2013</p>
+<div class="pi-feature">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="assets/images/team/li-zhang.jpg" class="img-fluid figure-img"></p>
+<figcaption>Dr.&nbsp;Li Zhang</figcaption>
+</figure>
+</div>
+<section id="dr.-li-zhang" class="level3 pi-bio">
+<h3 class="anchored" data-anchor-id="dr.-li-zhang">Dr.&nbsp;Li Zhang</h3>
+<p><span class="person-role">Associate Professor · Department of Poultry Science</span></p>
 <p>Dr.&nbsp;Zhang’s research focuses on agricultural microbiomes, microbial genomics, vaccine development, and food safety. His lab develops advanced molecular diagnostic tools (LAMP, qPCR) and applies whole-genome sequencing and bioinformatics to address critical challenges in poultry health and food safety.</p>
-<p><a href="https://scholar.google.com/citations?user=YOURPROFILE">Google Scholar</a> | <a href="https://github.com/lz245">GitHub</a> | <a href="https://www.poultry.msstate.edu/people/lz245">MSU Profile</a></p>
-<p><strong>Email:</strong> l.zhang (at) msstate.edu</p>
+<p><strong>Education</strong> Ph.D.&nbsp;in Nutrition, Mississippi State University · Ph.D.&nbsp;in Agriculture Biological Environmental &amp; Energy Engineering, Jilin University</p>
+<p><a href="https://scholar.google.com/citations?user=PpnVGN4AAAAJ&amp;hl=en" class="btn-ghost btn-sm">Google Scholar</a> <a href="https://orcid.org/0000-0002-3933-5794" class="btn-ghost btn-sm">ORCID</a> <a href="https://www.poultry.msstate.edu/people/lz245" class="btn-ghost btn-sm">MSU Profile</a> <a href="mailto:l.zhang@msstate.edu" class="btn-ghost btn-sm">Email</a></p>
 </section>
 </div>
-</div>
-</div>
-<hr>
 </section>
 <section id="research-faculty" class="level2">
 <h2 class="anchored" data-anchor-id="research-faculty">Research Faculty</h2>
-<div class="person-entry">
-<div class="columns">
-<div class="column" style="width:30%;">
-<p><img src="assets/images/team/linan-jia.jpg" class="img-fluid" alt="Dr. Linan Jia"></p>
-</div><div class="column" style="width:70%;">
-<section id="dr.-linan-jia" class="level3">
-<h3 class="anchored" data-anchor-id="dr.-linan-jia">Dr.&nbsp;Linan Jia</h3>
-<p>Assistant Research Professor</p>
-<p>Ph.D.&nbsp;in Agricultural Science, Mississippi State University</p>
-<p>M.S. in Animal Nutrition, Agricultural University of Hebei</p>
-<p>B.S. in Animal Science, Hebei University</p>
-<p>Dr.&nbsp;Jia specializes in poultry health and disease prevention, with a focus on understanding the molecular mechanisms underlying poultry pathogens and meat quality issues. She integrates advanced biotechnology and computational approaches to develop innovative solutions for the poultry industry. Her research aims to improve animal welfare and food safety through the development of new prevention and treatment strategies.</p>
-<p><a href="https://scholar.google.com/citations?user=KkyDvl8AAAAJ&amp;hl=en">Google Scholar</a> | <a href="https://www.poultry.msstate.edu/people/lj912">MSU Profile</a></p>
-<p><strong>Email:</strong> lj912 (at) msstate.edu</p>
-</section>
+<div id="listing-faculty-grid" class="quarto-listing quarto-listing-container-custom">
+<div class="people-grid">
+
+  <div class="person-card">
+    
+    <img class="person-photo" src="assets/images/team/linan-jia.jpg" alt="Dr. Linan Jia">
+    
+    <h3 class="anchored">Dr. Linan Jia</h3>
+    <p class="person-role">Assistant Research Professor</p>
+    <p class="person-blurb">Poultry health and disease prevention — molecular mechanisms of poultry pathogens and meat quality, combining biotechnology and computational approaches.
+</p>
+    
+    <p class="person-links">
+      <a href="mailto:lj912@msstate.edu" aria-label="Email Dr. Linan Jia"><i class="bi bi-envelope" aria-hidden="true"></i></a>
+      <a href="https://scholar.google.com/citations?user=KkyDvl8AAAAJ&amp;hl=en" aria-label="Google Scholar profile of Dr. Linan Jia"><i class="bi bi-mortarboard" aria-hidden="true"></i></a>
+      <a href="https://www.poultry.msstate.edu/people/lj912" aria-label="University profile of Dr. Linan Jia"><i class="bi bi-bank" aria-hidden="true"></i></a>
+    </p>
+  </div>
+
 </div>
+<div class="listing-no-matching d-none">No matching items</div>
 </div>
-</div>
-<hr>
-</section>
-<section id="research-technician" class="level2">
-<h2 class="anchored" data-anchor-id="research-technician">Research Technician</h2>
-<div class="person-entry">
-<div class="columns">
-<div class="column" style="width:30%;">
-<p><img src="assets/images/team/elianna-walters.jpg" class="img-fluid" alt="Elianna Walters"></p>
-</div><div class="column" style="width:70%;">
-<section id="elianna-walters" class="level3">
-<h3 class="anchored" data-anchor-id="elianna-walters">Elianna Walters</h3>
-<p>Research Associate</p>
-<p><em>[Education and research interests to be added]</em></p>
-<p><strong>Email:</strong> erw263 (at) msstate.edu</p>
-</section>
-</div>
-</div>
-</div>
-<hr>
 </section>
 <section id="postdoctoral-researchers" class="level2">
 <h2 class="anchored" data-anchor-id="postdoctoral-researchers">Postdoctoral Researchers</h2>
-<div class="person-entry">
-<div class="columns">
-<div class="column" style="width:30%;">
-<p><img src="assets/images/team/xin-ye.jpg" class="img-fluid" alt="Dr. Xin Ye"></p>
-</div><div class="column" style="width:70%;">
-<section id="dr.-xin-ye" class="level3">
-<h3 class="anchored" data-anchor-id="dr.-xin-ye">Dr.&nbsp;Xin Ye</h3>
-<p>Postdoctoral Research Associate</p>
-<p>Ph.D.&nbsp;in Horticulture, Mississippi State University (2021)</p>
-<p>M.S. in Chemistry, Polytechnic Institute of New York University (2013)</p>
-<p>B.A. in Chemistry, Saint Mary’s University of Minnesota (2011)</p>
-<p>Dr.&nbsp;Ye brings a unique interdisciplinary background combining chemistry and plant biology to the lab. Her research experience spans molecular biology techniques including cloning, qPCR, RNA-seq, proteomics, and protein expression/purification. She has expertise in bioinformatics tools (R, Python, SQL, Geneious) and has worked on projects involving gene expression analysis, systemic immunity, and stress responses. Her technical skills in Western blotting, ELISA, and cell culture complement the lab’s research on host-pathogen interactions and molecular detection methods.</p>
-<p><strong>Email:</strong> xy108 (at) msstate.edu</p>
+<div id="listing-postdocs-grid" class="quarto-listing quarto-listing-container-custom">
+<div class="people-grid">
+
+  <div class="person-card">
+    
+    <img class="person-photo" src="assets/images/team/xin-ye.jpg" alt="Dr. Xin Ye">
+    
+    <h3 class="anchored">Dr. Xin Ye</h3>
+    <p class="person-role">Postdoctoral Research Associate</p>
+    <p class="person-blurb">Interdisciplinary chemist and molecular biologist — cloning, qPCR, RNA-seq, proteomics, and bioinformatics for host-pathogen interaction and molecular detection research.
+</p>
+    
+    <p class="person-links">
+      <a href="mailto:xy108@msstate.edu" aria-label="Email Dr. Xin Ye"><i class="bi bi-envelope" aria-hidden="true"></i></a>
+      
+      
+    </p>
+  </div>
+
+  <div class="person-card">
+    
+    <img class="person-photo" src="assets/images/team/huanling-xing.jpg" alt="Dr. Huanling Xing">
+    
+    <h3 class="anchored">Dr. Huanling Xing</h3>
+    <p class="person-role">Postdoctoral Research Associate</p>
+    <p class="person-blurb">Natural antimicrobial compounds — mechanisms of cinnamon essential oil against avian colibacillosis, with expertise in GC-MS, LC-MS, RT-qPCR, and electron microscopy.
+</p>
+    
+    <p class="person-links">
+      <a href="mailto:hx66@msstate.edu" aria-label="Email Dr. Huanling Xing"><i class="bi bi-envelope" aria-hidden="true"></i></a>
+      
+      
+    </p>
+  </div>
+
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
 </section>
+<section id="research-staff" class="level2">
+<h2 class="anchored" data-anchor-id="research-staff">Research Staff</h2>
+<div id="listing-staff-grid" class="quarto-listing quarto-listing-container-custom">
+<div class="people-grid">
+
+  <div class="person-card">
+    
+    <img class="person-photo" src="assets/images/team/elianna-walters.jpg" alt="Elianna Walters">
+    
+    <h3 class="anchored">Elianna Walters</h3>
+    <p class="person-role">Research Associate</p>
+    
+    
+    <p class="person-links">
+      <a href="mailto:erw263@msstate.edu" aria-label="Email Elianna Walters"><i class="bi bi-envelope" aria-hidden="true"></i></a>
+      
+      
+    </p>
+  </div>
+
 </div>
+<div class="listing-no-matching d-none">No matching items</div>
 </div>
-</div>
-<div class="person-entry">
-<div class="columns">
-<div class="column" style="width:30%;">
-<p><img src="assets/images/team/huanling-xing.jpg" class="img-fluid" alt="Dr. Huanling Xing"></p>
-</div><div class="column" style="width:70%;">
-<section id="dr.-huanling-xing" class="level3">
-<h3 class="anchored" data-anchor-id="dr.-huanling-xing">Dr.&nbsp;Huanling Xing</h3>
-<p>Postdoctoral Research Associate</p>
-<p>Ph.D.&nbsp;in Preventive Veterinary Medicine, South China Agricultural University (2024)</p>
-<p>M.S. in Bioengineering, South China Agricultural University (2020)</p>
-<p>B.S. in Food Quality and Safety, Shanxi Agricultural University (2017)</p>
-<p>Dr.&nbsp;Xing brings seven years of research experience in natural antimicrobial compounds, with particular expertise in cinnamon essential oils and their pharmacological activities. Her doctoral research focused on the mechanism of cinnamon essential oil in inhibiting avian colibacillosis (E. coli infection in poultry) and its clinical applications. She has extensive technical skills in GC-MS, LC-MS, RT-qPCR, Western blotting, and electron microscopy (SEM/TEM). Her research interests include antibacterial mechanisms, natural product-based interventions for poultry pathogens, and food safety applications.</p>
-<p><strong>Email:</strong> hx66 (at) msstate.edu</p>
-</section>
-</div>
-</div>
-</div>
-<hr>
 </section>
 <section id="ph.d.-students" class="level2">
 <h2 class="anchored" data-anchor-id="ph.d.-students">Ph.D.&nbsp;Students</h2>
-<div class="person-entry">
-<div class="columns">
-<div class="column" style="width:30%;">
-<p><img src="assets/images/team/sunita-shrestha.jpg" class="img-fluid" alt="Sunita Shrestha"></p>
-</div><div class="column" style="width:70%;">
-<section id="sunita-shrestha" class="level3">
-<h3 class="anchored" data-anchor-id="sunita-shrestha">Sunita Shrestha</h3>
-<p>Candidate for Ph.D.&nbsp;in Poultry Science</p>
-<p>Sunita is working on pathogen genomics and vaccine development strategies for poultry pathogens. Her research focuses on identifying and characterizing vaccine candidates against avian pathogens using reverse vaccinology approaches.</p>
-<p><strong>Award:</strong> Best Oral Presentation Award (SCAD category) at IPSF 2026, 2025 Lallemand Animal Nutrition Scholarship Finalist</p>
-<p><strong>Email:</strong> ss4440 (at) msstate.edu</p>
-</section>
+<div id="listing-phd-grid" class="quarto-listing quarto-listing-container-custom">
+<div class="people-grid">
+
+  <div class="person-card">
+    
+    <img class="person-photo" src="assets/images/team/sunita-shrestha.jpg" alt="Sunita Shrestha">
+    
+    <h3 class="anchored">Sunita Shrestha</h3>
+    <p class="person-role">Ph.D. Student, Poultry Science</p>
+    <p class="person-blurb">Pathogen genomics and vaccine development — identifying and characterizing vaccine candidates against avian pathogens using reverse vaccinology.
+</p>
+    <p class="person-award"><i class="bi bi-award" aria-hidden="true"></i>Best Oral Presentation (SCAD), IPSF 2026</p>
+    <p class="person-links">
+      <a href="mailto:ss4440@msstate.edu" aria-label="Email Sunita Shrestha"><i class="bi bi-envelope" aria-hidden="true"></i></a>
+      
+      
+    </p>
+  </div>
+
+  <div class="person-card">
+    
+    <img class="person-photo" src="assets/images/team/manhong-wang.jpg" alt="Manhong Wang">
+    
+    <h3 class="anchored">Manhong Wang</h3>
+    <p class="person-role">Ph.D. Student, Poultry Science</p>
+    <p class="person-blurb">Culturomics of the poultry gut microbiome — isolating beneficial bacteria and probiotic candidates that improve poultry health and reduce pathogen colonization.
+</p>
+    <p class="person-award"><i class="bi bi-award" aria-hidden="true"></i>Certificate of Excellence in Pathology, IPSF 2026</p>
+    <p class="person-links">
+      <a href="mailto:mw2224@msstate.edu" aria-label="Email Manhong Wang"><i class="bi bi-envelope" aria-hidden="true"></i></a>
+      
+      
+    </p>
+  </div>
+
 </div>
+<div class="listing-no-matching d-none">No matching items</div>
 </div>
-</div>
-<div class="person-entry">
-<div class="columns">
-<div class="column" style="width:30%;">
-<p><img src="assets/images/team/manhong-wang.jpg" class="img-fluid" alt="Manhong Wang"></p>
-</div><div class="column" style="width:70%;">
-<section id="manhong-wang" class="level3">
-<h3 class="anchored" data-anchor-id="manhong-wang">Manhong Wang</h3>
-<p>Candidate for Ph.D.&nbsp;in Poultry Science</p>
-<p>Manhong is developing culturomics approaches to isolate and characterize beneficial bacteria from the poultry gut microbiome. His research aims to identify probiotics that can improve poultry health and reduce pathogen colonization.</p>
-<p><strong>Award:</strong> IPSF 2026 Certificate of Excellence at Pathology, IPSF 2026 Travel Award, 2024 International Paper Scholarship ($1,500), Mississippi Poultry Association</p>
-<p><strong>Email:</strong> mw2224 (at) msstate.edu</p>
-</section>
-</div>
-</div>
-</div>
-<hr>
 </section>
 <section id="m.s.-students" class="level2">
 <h2 class="anchored" data-anchor-id="m.s.-students">M.S. Students</h2>
-<div class="person-entry">
-<div class="columns">
-<div class="column" style="width:30%;">
-<p><img src="assets/images/team/rita-ugoh.jpg" class="img-fluid" alt="Rita Ugoh"></p>
-</div><div class="column" style="width:70%;">
-<section id="rita-ugoh" class="level3">
-<h3 class="anchored" data-anchor-id="rita-ugoh">Rita Ugoh</h3>
-<p>Candidate for M.S. in Food Science</p>
-<p>Rita is characterizing spoilage bacteria in catfish using culturomics approaches for the Mississippi Center for Food Safety. Her work aims to improve quality control and extend shelf life in catfish processing.</p>
-<p><strong>Email:</strong> ru90 (at) msstate.edu</p>
-</section>
+<div id="listing-ms-grid" class="quarto-listing quarto-listing-container-custom">
+<div class="people-grid">
+
+  <div class="person-card">
+    
+    <img class="person-photo" src="assets/images/team/rita-ugoh.jpg" alt="Rita Ugoh">
+    
+    <h3 class="anchored">Rita Ugoh</h3>
+    <p class="person-role">M.S. Student, Food Science</p>
+    <p class="person-blurb">Characterizing spoilage bacteria in catfish with culturomics for the Mississippi Center for Food Safety — improving quality control and shelf life in catfish processing.
+</p>
+    
+    <p class="person-links">
+      <a href="mailto:ru90@msstate.edu" aria-label="Email Rita Ugoh"><i class="bi bi-envelope" aria-hidden="true"></i></a>
+      
+      
+    </p>
+  </div>
+
+  <div class="person-card">
+    
+    <img class="person-photo" src="assets/images/team/haley-nabors.jpg" alt="Haley Nabors">
+    
+    <h3 class="anchored">Haley Nabors</h3>
+    <p class="person-role">M.S. Student, Poultry Science</p>
+    <p class="person-blurb">Antibiotic resistance and multi-drug resistance patterns in Clostridium perfringens isolated from diseased chickens.
+</p>
+    
+    <p class="person-links">
+      <a href="mailto:hln80@msstate.edu" aria-label="Email Haley Nabors"><i class="bi bi-envelope" aria-hidden="true"></i></a>
+      
+      
+    </p>
+  </div>
+
 </div>
+<div class="listing-no-matching d-none">No matching items</div>
 </div>
-</div>
-<div class="person-entry">
-<div class="columns">
-<div class="column" style="width:30%;">
-<p><img src="assets/images/team/haley-nabors.jpg" class="img-fluid" alt="Haley Nabors"></p>
-</div><div class="column" style="width:70%;">
-<section id="haley-nabors" class="level3">
-<h3 class="anchored" data-anchor-id="haley-nabors">Haley Nabors</h3>
-<p>Candidate for M.S. in Poultry Science</p>
-<p>Haley is investigating antibiotic resistance and multi-drug resistance patterns in <em>Clostridium perfringens</em> isolated from diseased chickens. Her research contributes to understanding antimicrobial resistance in poultry pathogens.</p>
-<p>Expected graduation: 2027</p>
-<p><strong>Email:</strong> hln80 (at) msstate.edu</p>
-</section>
-</div>
-</div>
-</div>
-<hr>
 </section>
 <section id="undergraduate-researchers" class="level2">
 <h2 class="anchored" data-anchor-id="undergraduate-researchers">Undergraduate Researchers</h2>
-<div class="person-entry">
-<div class="columns">
-<div class="column" style="width:30%;">
-<!-- ![](assets/images/team/zoe-lohf.jpg){fig-alt="Zoe Lohf"} -->
-</div><div class="column" style="width:70%;">
-<section id="zoe-lohf" class="level3">
-<h3 class="anchored" data-anchor-id="zoe-lohf">Zoe Lohf</h3>
-<p>Undergraduate Research Assistant</p>
-<p>Zoe joined the lab in 2025 supporting laboratory operations and research projects.</p>
+<div id="listing-undergrad-grid" class="quarto-listing quarto-listing-container-custom">
+<div class="people-grid">
+
+  <div class="person-card">
+    
+    <div class="person-photo-placeholder" aria-hidden="true">ZL</div>
+    
+    <h3 class="anchored">Zoe Lohf</h3>
+    <p class="person-role">Undergraduate Research Assistant</p>
+    <p class="person-blurb">Joined the lab in 2025, supporting laboratory operations and research projects.</p>
+    
+    <p class="person-links">
+      
+      
+      
+    </p>
+  </div>
+
+  <div class="person-card">
+    
+    <div class="person-photo-placeholder" aria-hidden="true">KM</div>
+    
+    <h3 class="anchored">Keaura Mearday</h3>
+    <p class="person-role">Undergraduate Research Assistant</p>
+    <p class="person-blurb">Joined the lab in 2025, supporting laboratory operations and research projects.</p>
+    
+    <p class="person-links">
+      
+      
+      
+    </p>
+  </div>
+
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
 </section>
+<section id="the-lab-in-action" class="level2">
+<h2 class="anchored" data-anchor-id="the-lab-in-action">The lab <span class="accent-word">in</span> action</h2>
+<div class="gallery-duo">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="assets/images/team/lab-psa-2025.jpg" class="img-fluid figure-img"></p>
+<figcaption>The Zhang Lab at the 2025 Poultry Science Association meeting</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="assets/images/team/lab-bbq-2025.jpg" class="img-fluid figure-img"></p>
+<figcaption>Lab barbecue, 2025 — science runs on good food too</figcaption>
+</figure>
 </div>
 </div>
-</div>
-<div class="person-entry">
-<div class="columns">
-<div class="column" style="width:30%;">
-<!-- ![](assets/images/team/keaura-mearday.jpg){fig-alt="Keaura Mearday"} -->
-</div><div class="column" style="width:70%;">
-<section id="keaura-mearday" class="level3">
-<h3 class="anchored" data-anchor-id="keaura-mearday">Keaura Mearday</h3>
-<p>Undergraduate Research Assistant</p>
-<p>Keaura joined the lab in 2025 supporting laboratory operations and research projects.</p>
 </section>
-</div>
-</div>
-</div>
-<hr>
-</section>
-<section id="former-lab-members" class="level2">
-<h2 class="anchored" data-anchor-id="former-lab-members">Former Lab Members</h2>
+<section id="alumni" class="level2">
+<h2 class="anchored" data-anchor-id="alumni">Alumni</h2>
 <section id="former-postdocs" class="level3">
 <h3 class="anchored" data-anchor-id="former-postdocs">Former Postdocs</h3>
-<div class="person-entry">
-<div class="columns">
-<div class="column" style="width:30%;">
-<p><img src="assets/images/team/monzur-chowdhury.jfif" class="img-fluid" alt="Dr. Monzur Chowdhury"></p>
-</div><div class="column" style="width:70%;">
-<section id="dr.-monzur-chowdhury" class="level3">
-<h3 class="anchored" data-anchor-id="dr.-monzur-chowdhury">Dr.&nbsp;Monzur Chowdhury</h3>
-<p>Former Postdoctoral Research Associate</p>
-<p>Research focus: Pathogens, host-pathogen interactions, molecular &amp; cellular biology</p>
-<p><strong>Now:</strong> Researcher, Mississippi State University</p>
-</section>
-</div>
-</div>
-</div>
-<div class="person-entry">
-<div class="columns">
-<div class="column" style="width:30%;">
-<p><img src="assets/images/team/saman-fatemi.jpg" class="img-fluid" alt="Dr. Saman Fatemi"></p>
-</div><div class="column" style="width:70%;">
-<section id="dr.-saman-fatemi" class="level3">
-<h3 class="anchored" data-anchor-id="dr.-saman-fatemi">Dr.&nbsp;Saman Fatemi</h3>
-<p>Former Postdoctoral Research Associate</p>
-<p>Research focus: Poultry nutrition, in ovo injection, immunology, and genetics</p>
-<p><strong>Now:</strong> Postdoctoral Associate, Mississippi State University</p>
-</section>
-</div>
-</div>
-</div>
-<div class="person-entry">
-<div class="columns">
-<div class="column" style="width:30%;">
-<p><img src="assets/images/team/reshma-ramachandran.jpg" class="img-fluid" alt="Dr. Reshma Ramachandran"></p>
-</div><div class="column" style="width:70%;">
-<section id="dr.-reshma-ramachandran" class="level3">
-<h3 class="anchored" data-anchor-id="dr.-reshma-ramachandran">Dr.&nbsp;Reshma Ramachandran</h3>
-<p>Former Postdoctoral Research Associate</p>
-<p>Research focus: Poultry reproductive physiology, bacterial pathogen mitigation, host-pathogen interactions</p>
-<p><strong>Now:</strong> Professional Services Veterinarian - Poultry, IDEXX Laboratories</p>
-</section>
-</div>
-</div>
+<div class="alumni-list">
+<ul>
+<li><strong>Dr.&nbsp;Monzur Chowdhury</strong> — <em>pathogens, host-pathogen interactions, molecular &amp; cellular biology.</em> <span class="alum-now">Now: Researcher, Mississippi State University</span></li>
+<li><strong>Dr.&nbsp;Saman Fatemi</strong> — <em>poultry nutrition, in ovo injection, immunology, and genetics.</em> <span class="alum-now">Now: Postdoctoral Associate, Mississippi State University</span></li>
+<li><strong>Dr.&nbsp;Reshma Ramachandran</strong> — <em>poultry reproductive physiology, bacterial pathogen mitigation.</em> <span class="alum-now">Now: Professional Services Veterinarian – Poultry, IDEXX Laboratories</span></li>
+</ul>
 </div>
 </section>
 <section id="ph.d.-alumni" class="level3">
 <h3 class="anchored" data-anchor-id="ph.d.-alumni">Ph.D.&nbsp;Alumni</h3>
-<div class="person-entry">
-<div class="columns">
-<div class="column" style="width:30%;">
-<p><img src="assets/images/team/diksha-pokhrel.jpg" class="img-fluid" alt="Dr. Diksha Pokhrel"></p>
-</div><div class="column" style="width:70%;">
-<section id="dr.-diksha-pokhrel-ph.d.-2024" class="level3">
-<h3 class="anchored" data-anchor-id="dr.-diksha-pokhrel-ph.d.-2024">Dr.&nbsp;Diksha Pokhrel (Ph.D.&nbsp;2024)</h3>
-<p><em>Thesis: Campylobacter jejuni biofilm formation, aerotolerance, and genomic characterization</em></p>
-<p><strong>Award:</strong> 2023 IFT Mid-South Section Scholarship ($2,000), PSA Travel Award ($1,500)</p>
-<p><strong>Now:</strong> Lead Micribiologist at Ferrero</p>
-</section>
-</div>
-</div>
-</div>
-<div class="person-entry">
-<div class="columns">
-<div class="column" style="width:30%;">
-<p><img src="assets/images/team/hudson-thames.jpg" class="img-fluid" alt="Dr. Hudson T. Thames"></p>
-</div><div class="column" style="width:70%;">
-<section id="dr.-hudson-t.-thames-ph.d.-2024" class="level3">
-<h3 class="anchored" data-anchor-id="dr.-hudson-t.-thames-ph.d.-2024">Dr.&nbsp;Hudson T. Thames (Ph.D.&nbsp;2024)</h3>
-<p><em>Thesis: Salmonella biofilm formation and environmental stress responses</em></p>
-<p><strong>Award:</strong> 2023 PSA Travel Award ($1,500)</p>
-<p><strong>Now:</strong> Assistant Professor, Poultry Science, Mississippi State University</p>
-</section>
-</div>
-</div>
-</div>
-<div class="person-entry">
-<div class="columns">
-<div class="column" style="width:30%;">
-<p><img src="assets/images/team/sabin-poudel.jpg" class="img-fluid" alt="Dr. Sabin Poudel"></p>
-</div><div class="column" style="width:70%;">
-<section id="dr.-sabin-poudel-ph.d.-2023" class="level3">
-<h3 class="anchored" data-anchor-id="dr.-sabin-poudel-ph.d.-2023">Dr.&nbsp;Sabin Poudel (Ph.D.&nbsp;2023)</h3>
-<p><em>Thesis: Campylobacter jejuni vaccine candidate identification and characterization</em></p>
-<p><strong>Award:</strong> 2022 PSA Student of The Year ($1,000), 2023 MAFES Excellent Research Award ($2,000), CALS Student Research Ambassador, International Paper Scholarship 1st place ($5,000)</p>
-<p><strong>Now:</strong> Assistant Research Professor, Poultry Science, Auburn University</p>
-</section>
-</div>
-</div>
+<div class="alumni-list">
+<ul>
+<li><strong>Dr.&nbsp;Diksha Pokhrel</strong> (Ph.D.&nbsp;2024) — <em>Campylobacter jejuni biofilm formation, aerotolerance, and genomic characterization.</em> <span class="alum-now">Now: Lead Microbiologist, Ferrero</span></li>
+<li><strong>Dr.&nbsp;Hudson T. Thames</strong> (Ph.D.&nbsp;2024) — <em>Salmonella biofilm formation and environmental stress responses.</em> <span class="alum-now">Now: Assistant Professor, Poultry Science, Mississippi State University</span></li>
+<li><strong>Dr.&nbsp;Sabin Poudel</strong> (Ph.D.&nbsp;2023) — <em>Campylobacter jejuni vaccine candidate identification.</em> 2022 PSA Student of the Year. <span class="alum-now">Now: Assistant Research Professor, Poultry Science, Auburn University</span></li>
+</ul>
 </div>
 </section>
 <section id="m.s.-alumni" class="level3">
 <h3 class="anchored" data-anchor-id="m.s.-alumni">M.S. Alumni</h3>
-<div class="person-entry">
-<div class="columns">
-<div class="column" style="width:30%;">
-<p><img src="assets/images/team/hailey-fugate.jpg" class="img-fluid" alt="Hailey Fugate"></p>
-</div><div class="column" style="width:70%;">
-<section id="hailey-fugate-m.s.-2025" class="level3">
-<h3 class="anchored" data-anchor-id="hailey-fugate-m.s.-2025">Hailey Fugate (M.S. 2025)</h3>
-<p><em>Thesis: Vaccine candidate validation against avian pathogenic E. coli and Campylobacter jejuni colonization challenge models</em></p>
-<p><strong>Award:</strong> 2025 SCAD Travel Award ($250), IPPE Travel Award ($500)</p>
-<p><strong>Now:</strong> Microbiologitst at Aviagen</p>
-</section>
-</div>
-</div>
-</div>
-<div class="person-entry">
-<div class="columns">
-<div class="column" style="width:30%;">
-<p><img src="assets/images/team/abubakar-isah.jpg" class="img-fluid" alt="Abubakar Shitu Isah"></p>
-</div><div class="column" style="width:70%;">
-<section id="abubakar-shitu-isah-m.s.-2024" class="level3">
-<h3 class="anchored" data-anchor-id="abubakar-shitu-isah-m.s.-2024">Abubakar Shitu Isah (M.S. 2024)</h3>
-<p><em>Thesis: Bioluminescent Salmonella Reading construction and vertical transmission evaluation</em></p>
-<p><strong>Now:</strong> Ph.D.&nbsp;program at CVM, Mississippi State University</p>
-</section>
-</div>
-</div>
-</div>
-<div class="person-entry">
-<div class="columns">
-<div class="column" style="width:30%;">
-<p><img src="assets/images/team/priyanka-devkota.jpg" class="img-fluid" alt="Priyanka Devkota"></p>
-</div><div class="column" style="width:70%;">
-<section id="priyanka-devkota-m.s.-2022" class="level3">
-<h3 class="anchored" data-anchor-id="priyanka-devkota-m.s.-2022">Priyanka Devkota (M.S. 2022)</h3>
-<p><em>Thesis: APEC virulence characterization and antimicrobial resistance</em></p>
-<p><strong>Award:</strong> PSA Certificate of Excellence, International Paper Scholarship 1st place ($2,000)</p>
-<p><strong>Now:</strong> Lab Research Analyst at Duke Human Vaccine Institute</p>
-</section>
-</div>
-</div>
-</div>
-<div class="person-entry">
-<div class="columns">
-<div class="column" style="width:30%;">
-<p><img src="assets/images/team/deepa-chaudhary.jpg" class="img-fluid" alt="Deepa Chaudhary"></p>
-</div><div class="column" style="width:70%;">
-<section id="deepa-chaudhary-m.s.-2022" class="level3">
-<h3 class="anchored" data-anchor-id="deepa-chaudhary-m.s.-2022">Deepa Chaudhary (M.S. 2022)</h3>
-<p><em>Thesis: LAMP assay optimization for Clostridium perfringens detection</em></p>
-<p><strong>Award:</strong> PSA Certificate of Excellence in Genetics and Molecular Biology</p>
-<p><strong>Now:</strong> Postdoctoral Researcher, Department of Veterinary and Biomedical Sciences, Penn State University</p>
-</section>
-</div>
-</div>
-</div>
-<div class="person-entry">
-<div class="columns">
-<div class="column" style="width:30%;">
-<p><img src="assets/images/team/tianmin-li.jpg" class="img-fluid" alt="Tianmin Li"></p>
-</div><div class="column" style="width:70%;">
-<section id="tianmin-li-m.s.-2020" class="level3">
-<h3 class="anchored" data-anchor-id="tianmin-li-m.s.-2020">Tianmin Li (M.S. 2020)</h3>
-<p><em>Thesis: In ovo probiotic effects on APEC incidence in broilers</em></p>
-<p><strong>Award:</strong> International Paper Scholarship 2nd place ($2,000)</p>
-<p><strong>Now:</strong> P/T Research Assistant, Department of Biomedical Sciences, City University of Hong Kong</p>
-</section>
-</div>
-</div>
+<div class="alumni-list">
+<ul>
+<li><strong>Hailey Fugate</strong> (M.S. 2025) — <em>vaccine candidate validation against APEC and C. jejuni.</em> <span class="alum-now">Now: Microbiologist, Aviagen</span></li>
+<li><strong>Abubakar Shitu Isah</strong> (M.S. 2024) — <em>bioluminescent Salmonella Reading and vertical transmission.</em> <span class="alum-now">Now: Ph.D.&nbsp;program, College of Veterinary Medicine, Mississippi State University</span></li>
+<li><strong>Priyanka Devkota</strong> (M.S. 2022) — <em>APEC virulence characterization and antimicrobial resistance.</em> <span class="alum-now">Now: Lab Research Analyst, Duke Human Vaccine Institute</span></li>
+<li><strong>Deepa Chaudhary</strong> (M.S. 2022) — <em>LAMP assay optimization for Clostridium perfringens detection.</em> <span class="alum-now">Now: Postdoctoral Researcher, Penn State University</span></li>
+<li><strong>Tianmin Li</strong> (M.S. 2020) — <em>in ovo probiotic effects on APEC incidence in broilers.</em> <span class="alum-now">Now: Research Assistant, City University of Hong Kong</span></li>
+</ul>
 </div>
 </section>
 <section id="undergraduate-alumni" class="level3">
 <h3 class="anchored" data-anchor-id="undergraduate-alumni">Undergraduate Alumni</h3>
-<div class="person-entry">
-<div class="columns">
-<div class="column" style="width:30%;">
-<!-- ![](assets/images/team/sulav-thapa.jpg){fig-alt="Sulav Jung Thapa"} -->
-</div><div class="column" style="width:70%;">
-<section id="sulav-jung-thapa-2024-2025" class="level3">
-<h3 class="anchored" data-anchor-id="sulav-jung-thapa-2024-2025">Sulav Jung Thapa (2024-2025)</h3>
-<p>B.S. in Computer Science</p>
-<p>Research focus: Image recognition and processing using OpenMV modules for health and disease monitoring in poultry farms</p>
-<p>2024 USDA ARS Undergraduate Summer Internship, 2024 ORED URCD Award (#342)</p>
+<div class="alumni-list">
+<ul>
+<li><strong>Sulav Jung Thapa</strong> (2024–2025) — <em>image recognition for poultry health monitoring.</em> 2024 USDA ARS Undergraduate Summer Internship.</li>
+<li><strong>Mackenzie Ripper</strong> (2020–2022) — CALS/MAFES Undergraduate Research Scholar, <a href="https://www.mafes.msstate.edu/discovers/article.php?id=295">featured in MAFES Discovers</a>. <span class="alum-now">Now: Veterinary School, NC State University</span></li>
+<li><strong>Mary Beth Tingle</strong> (2022–2023) — 1st place, MSU 2023 Spring Undergraduate Research Symposium (Biological Sciences).</li>
+<li><strong>Javad A’arabi</strong> (2022) — Honors Thesis Student.</li>
+<li><strong>Dylan Lesak</strong> (2021) — William M. White Special Project Award. <span class="alum-now">Now: completed M.S. at MSU (2023)</span></li>
+<li><strong>Sadie White</strong> (2019) — CALS/MAFES Undergraduate Research Scholar. <span class="alum-now">Now: Ph.D.&nbsp;Student, Mississippi State University</span></li>
+</ul>
+</div>
+</section>
+</section>
+<div class="band-maroon band cta-inline">
+<section id="want-to-join-this-team" class="level2 band-center">
+<h2 class="anchored" data-anchor-id="want-to-join-this-team">Want to join <span class="accent-word">this</span> team?</h2>
+<p>We welcome curious scientists at every stage — undergraduates through postdocs.</p>
+<p><a href="./join.html" class="btn-maroon">See open opportunities</a></p>
 </section>
 </div>
-</div>
-</div>
-<div class="person-entry">
-<div class="columns">
-<div class="column" style="width:30%;">
-<p><img src="assets/images/team/mackenzie-ripper.jpg" class="img-fluid" alt="Mackenzie Ripper"></p>
-</div><div class="column" style="width:70%;">
-<section id="mackenzie-ripper-20202022" class="level3">
-<h3 class="anchored" data-anchor-id="mackenzie-ripper-20202022">Mackenzie Ripper (2020–2022)</h3>
-<p>CALS/MAFES Undergraduate Research Scholars Program</p>
-<p>Mackenzie conducts research in a poultry science laboratory. <a href="https://www.mafes.msstate.edu/discovers/article.php?id=295">Featured in MAFES Discovers</a></p>
-<p><strong>Now:</strong> Veterinary School, NC State University (Fall 2024)</p>
-</section>
-</div>
-</div>
-</div>
-<div class="person-entry">
-<div class="columns">
-<div class="column" style="width:30%;">
-
-</div><div class="column" style="width:70%;">
-<section id="mary-beth-tingle-20222023" class="level3">
-<h3 class="anchored" data-anchor-id="mary-beth-tingle-20222023">Mary Beth Tingle (2022–2023)</h3>
-<p>CALS/MAFES Undergraduate Research Scholars Program</p>
-<p><strong>Award</strong> 1st place ($250), MSU 2023 Spring Undergraduate Research Symposium (Biological Sciences)</p>
-</section>
-</div>
-</div>
-</div>
-<div class="person-entry">
-<div class="columns">
-<div class="column" style="width:30%;">
-
-</div><div class="column" style="width:70%;">
-<section id="javad-aarabi-2022" class="level3">
-<h3 class="anchored" data-anchor-id="javad-aarabi-2022">Javad A’arabi (2022)</h3>
-<p>Honors Thesis Student</p>
-</section>
-</div>
-</div>
-</div>
-<div class="person-entry">
-<div class="columns">
-<div class="column" style="width:30%;">
-
-</div><div class="column" style="width:70%;">
-<section id="dylan-lesak-2021" class="level3">
-<h3 class="anchored" data-anchor-id="dylan-lesak-2021">Dylan Lesak (2021)</h3>
-<p>William M. White Special Project Award recipient</p>
-<p><strong>Now:</strong> Completed M.S. at MSU (2023)</p>
-</section>
-</div>
-</div>
-</div>
-<div class="person-entry">
-<div class="columns">
-<div class="column" style="width:30%;">
-
-</div><div class="column" style="width:70%;">
-<section id="sadie-white-2019" class="level3">
-<h3 class="anchored" data-anchor-id="sadie-white-2019">Sadie White (2019)</h3>
-<p>CALS/MAFES Undergraduate Research Scholars Program</p>
-<p><strong>Now:</strong> Research Associate II, James E. Garrison Sensory Physiology Lab; Ph.D.&nbsp;Student, Mississippi State University</p>
-</section>
-</div>
-</div>
-</div>
-<hr>
-<p><em>Interested in joining our team? <a href="./join.html">See current opportunities</a></em></p>
 
 
-</section>
-</section>
+
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -1074,6 +1113,84 @@ ul.task-list li input[type="checkbox"] {
   });
   </script>
 </div> <!-- /content -->
+<!-- Site footer + small site JS, injected on every page via include-after-body.
+     Footer links carry data-zl-href (site-root-relative); the script below
+     resolves them against the actual site root so they work both at
+     https://lz245.github.io/ and under a project-page subpath preview. -->
+<footer class="zl-footer">
+  <div class="zl-footer-inner">
+    <div>
+      <h2>Zhang Lab</h2>
+      <p>Department of Poultry Science<br>
+         Mississippi State University<br>
+         Mississippi State, MS 39762</p>
+      <p><a href="mailto:l.zhang@msstate.edu">l.zhang@msstate.edu</a></p>
+    </div>
+    <nav aria-label="Footer">
+      <p class="zl-footer-heading">Explore</p>
+      <ul>
+        <li><a href="./" data-zl-href="index.html">Home</a></li>
+        <li><a href="./people.html" data-zl-href="people.html">People</a></li>
+        <li><a href="./research.html" data-zl-href="research.html">Research</a></li>
+        <li><a href="./publications.html" data-zl-href="publications.html">Publications</a></li>
+        <li><a href="./news/" data-zl-href="news/index.html">News</a></li>
+        <li><a href="./teaching.html" data-zl-href="teaching.html">Teaching</a></li>
+        <li><a href="./join.html" data-zl-href="join.html">Join Us</a></li>
+      </ul>
+    </nav>
+    <div>
+      <p class="zl-footer-heading">Our Support</p>
+      <p>Research supported by USDA ARS, USDA NIFA, the U.S. Poultry &amp; Egg
+         Association, MAFES, and industry partners.</p>
+      <p style="margin-top:1rem;">
+        <a href="https://www.poultry.msstate.edu/people/lz245">MSU Profile</a><br>
+        <a href="https://github.com/lz245">GitHub</a>
+      </p>
+    </div>
+  </div>
+  <div class="zl-footer-bottom">
+    <span>© 2026 Zhang Lab, Mississippi State University</span>
+    <span>Questions or accessibility feedback? <a href="mailto:l.zhang@msstate.edu">Email us</a></span>
+  </div>
+</footer>
+<script>
+(function () {
+  // Resolve footer links against the real site root (works under subpath hosting).
+  var probe = document.querySelector('script[src*="site_libs/"]');
+  if (probe) {
+    var root = probe.getAttribute('src').split('site_libs/')[0];
+    document.querySelectorAll('a[data-zl-href]').forEach(function (a) {
+      a.setAttribute('href', root + a.getAttribute('data-zl-href'));
+    });
+  }
+  // Navbar shadow after scrolling.
+  var nav = document.querySelector('.navbar');
+  if (nav) {
+    var onScroll = function () {
+      nav.classList.toggle('scrolled', window.scrollY > 40);
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  }
+  // Scroll-reveal (no-op when reduced motion is preferred).
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches &&
+      'IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) {
+          e.target.classList.add('in-view');
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal-up').forEach(function (el) { io.observe(el); });
+  } else {
+    document.querySelectorAll('.reveal-up').forEach(function (el) {
+      el.classList.add('in-view');
+    });
+  }
+})();
+</script>
 
 
 

@@ -10,41 +10,43 @@ project:
     - "!docs/**"
   resources:
     - "assets/**"
-    - "CNAME"
+    # Disables GitHub Pages' Jekyll processing of the rendered output.
+    - ".nojekyll"
+
+# Build profiles:
+#   prod    (default) — indexable, Google Analytics on. `quarto render` = production.
+#   preview           — noindex, no analytics. For fork preview builds:
+#                       PowerShell:  $env:QUARTO_PROFILE="preview"; quarto render
+profile:
+  default: prod
 
 website:
-  title: "Li Zhang | Agricultural Microbiomes & Food Safety"
-  description: "Agricultural Microbiomes, Microbial Genomics, and Food Safety Research"
+  title: "Zhang Lab | Agricultural Microbiomes & Food Safety"
+  description: "Agricultural Microbiomes, Microbial Genomics, and Food Safety Research at Mississippi State University"
   site-url: "https://lz245.github.io"
   repo-url: "https://github.com/lz245/lz245.github.io"
-  
-  # Favicon and branding
-  favicon: assets/images/favicon.ico
-  
-  # Open Graph / Social sharing metadata
+
+  favicon: assets/images/favicon.png
+
   open-graph:
     locale: en_US
     site-name: "Zhang Lab - MSU"
+    image: assets/images/team/lab-psa-2025.jpg
   twitter-card:
     card-style: summary_large_image
-  
-  # Google Analytics (GA4) - using manual script injection instead
-  # google-analytics:
-  #   tracking-id: "G-3B7N686V5Q"
-  #   anonymize-ip: true
-  
-  # Search configuration
+    image: assets/images/team/lab-psa-2025.jpg
+
   search:
     location: navbar
     type: overlay
-  
-  # Navigation bar
+
   navbar:
     background: "#660000"  # MSU maroon
     foreground: light
     logo: assets/images/lab-logo.png
     logo-alt: "Zhang Lab Logo"
     title: "Zhang Lab"
+    pinned: true
     left:
       - text: "Home"
         href: index.qmd
@@ -72,24 +74,17 @@ website:
       - icon: envelope
         href: mailto:l.zhang@msstate.edu
         aria-label: Email
-  
-  # Sidebar (disabled for clean look, enable per-page if needed)
-  sidebar: false
 
-  # Page navigation
+  sidebar: false
   page-navigation: true
   back-to-top-navigation: true
   bread-crumbs: false
-  
-  # Reader mode
   reader-mode: false
 
-# Format settings
 format:
   html:
     theme:
       light: [cosmo, styles/custom.scss]
-    css: styles/custom.css
     toc: true
     toc-depth: 3
     toc-location: right
@@ -101,42 +96,12 @@ format:
     code-copy: true
     code-overflow: wrap
     highlight-style: github
-    
-    # Grid layout for responsiveness
+
     grid:
       sidebar-width: 0px
-      body-width: 900px
-      margin-width: 300px
+      body-width: 950px
+      margin-width: 260px
       gutter-width: 1.5rem
-    
-    # Include custom resources
-    include-in-header:
-      - text: |
-          <link rel="preconnect" href="https://fonts.googleapis.com">
-          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-          <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&family=Source+Serif+Pro:wght@400;600&display=swap" rel="stylesheet">
-          <meta name="robots" content="index, follow">
-          <meta name="keywords" content="agricultural microbiomes, food safety, microbial genomics, bioinformatics, whole-genome sequencing, WGS, biofilms, foodborne pathogens, Salmonella, Campylobacter, E. coli, nanopore sequencing, LAMP assay, molecular detection">
-          <!-- Google tag (gtag.js) -->
-          <script async src="https://www.googletagmanager.com/gtag/js?id=G-3B7N686V5Q"></script>
-          <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-3B7N686V5Q');
-          </script>
 
-# Bibliography settings for publications
-bibliography: publications.bib
-csl: styles/apa-cv.csl
-
-# Execution settings (for any computational content)
-execute:
-  freeze: auto
-  echo: false
-  warning: false
-  message: false
-
-# Metadata for academic indexing
-metadata:
-  pagetitle: "Li Zhang | Agricultural Microbiomes & Food Safety Research"
+    include-after-body:
+      - file: _partials/site-tail.html
