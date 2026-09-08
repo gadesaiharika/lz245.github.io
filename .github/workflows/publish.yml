@@ -1,0 +1,91 @@
+# Rebuilds the website automatically whenever content changes.
+#
+# WHY THIS EXISTS
+# The website is written in simple text files (the .qmd files). Those files
+# have to be turned into web pages before the site can show them. That used to
+# be done by hand on someone's laptop, which meant you needed special software
+# installed just to update the site.
+#
+# Now GitHub does it for you: edit a file in your browser, save it, and this
+# job rebuilds the site and publishes it a minute or two later.
+#
+# If this job fails (a red X in the Actions tab), the website is NOT broken --
+# it simply keeps showing the previous version until the problem is fixed.
+
+name: Build and publish site
+
+on:
+  push:
+    branches: [main]
+    # Ignore this job's own commits, so it never triggers itself in a loop.
+    paths-ignore:
+      - 'docs/**'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+
+# Never run two publishes at once.
+concurrency:
+  group: publish-site
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      # Always build from the newest version of the site, not just the change
+      # that triggered this run.
+      - name: Get the latest files
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Install Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          version: 1.10.18
+
+      - name: Build the website
+        run: quarto render
+
+      - name: Publish the rebuilt website
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          if [ -z "$(git status --porcelain docs)" ]; then
+            echo "The built site is already up to date; nothing to publish."
+            exit 0
+          fi
+
+          git add docs
+          git commit -m "Rebuild site [automated]"
+
+          # If someone saved another change while this was building, start over
+          # from their version and rebuild, rather than overwriting their work.
+          for attempt in 1 2 3; do
+            if git push; then
+              echo "Published."
+              exit 0
+            fi
+            echo "Someone else saved a change while this was building. Rebuilding on top of it."
+            git fetch origin main
+            git reset --hard origin/main
+            quarto render
+            git add docs
+            if git diff --cached --quiet; then
+              echo "Their build already covers this change; nothing to publish."
+              exit 0
+            fi
+            git commit -m "Rebuild site [automated]"
+          done
+
+          echo "Could not publish after 3 attempts."
+          exit 1
+
+      - name: Ask GitHub Pages to publish it
+        run: gh api -X POST "repos/${GITHUB_REPOSITORY}/pages/builds"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
