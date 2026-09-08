@@ -37,8 +37,6 @@ listing:
 
 [Assistant Professor · Department of Poultry Science]{.person-role}
 
-[Faculty Affiliate · Institute for Genomics, Biocomputing and Biotechnology](https://www.igbb.msstate.edu/){.person-role}
-
 Dr. Zhang's research focuses on agricultural microbiomes, microbial genomics,
 vaccine development, and food safety. His lab develops advanced molecular
 diagnostic tools (LAMP, qPCR) and applies whole-genome sequencing and
