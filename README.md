@@ -11,26 +11,35 @@ Built with [Quarto](https://quarto.org). Served free by GitHub Pages from the
 
 ## How publishing works (read this first)
 
-GitHub Pages serves whatever is in **`main:/docs`**. Nothing deploys
-automatically from source files — you must render locally and commit the
-result:
+**Editing content does not require Quarto, git, or a terminal.** Change a file
+on github.com and click *Commit changes*; a GitHub Actions workflow
+(`.github/workflows/publish.yml`) renders the site, commits the rebuilt `docs/`
+folder, and asks GitHub Pages to publish it. The change is live in roughly two
+to four minutes.
+
+**If you are not a developer, stop here and read
+[HOW-TO-UPDATE-THE-WEBSITE.md](HOW-TO-UPDATE-THE-WEBSITE.md)** — a plain-English
+guide to adding news posts, lab members, publications, and photos through the
+browser.
+
+If a build fails, the previously published site keeps serving; nothing goes
+down. Failures appear as a red X under the repository's **Actions** tab.
+
+### Working locally (optional)
+
+Only needed for design or structural work. Requires the
+[Quarto CLI](https://quarto.org/docs/get-started/) — this site is built with
+Quarto **1.10.18**, pinned to the same version in the workflow so local and CI
+output match. No R or Python needed.
 
 ```
-# 1. edit source files (.qmd, data/, styles/)
+quarto preview         # live preview while editing
 quarto render          # writes the site into docs/
-git add -A
-git commit -m "Describe your change"
-git push
 ```
 
-Live in ~1–3 minutes. If you push source changes **without** rendering,
-the live site does not change.
-
-Requirements: [Quarto CLI](https://quarto.org/docs/get-started/) (this site
-was built with Quarto **1.10**; use 1.10+ so rendered output stays
-consistent). No R or Python needed.
-
-Preview while editing: `quarto preview`
+You may commit `docs/` along with your source changes, but you no longer need
+to — pushing source alone is enough, and the workflow will rebuild and commit
+`docs/` for you.
 
 ---
 
@@ -125,7 +134,7 @@ _partials/             footer + site JS (injected every page)
 _templates/            EJS templates for generated grids (people)
 data/people/           lab-member data (one YAML per role group)
 news/                  news posts (one .qmd per post)
-protocols/             protocol pages (hidden from nav until populated)
+protocols/             protocol pages (linked from the navbar)
 assets/images/         images (run scripts/optimize-images.ps1 after adding)
 assets/fonts/          self-hosted WOFF2 fonts
 styles/custom.scss     the entire design system
